@@ -62,6 +62,24 @@ specialists:
   status: active
   title: House style checker
   blurb: Kettle Hill not San Juan Hill, buttes not mesas, T.R. not Teddy, participants, Trustees, Benefactors.
+- name: quiz-check
+  group: workflow
+  status: active
+  title: Quiz checker
+  blurb: Checks every quiz option, not just the answer. Catches wrong answer keys, distractors that are secretly true,
+    and explanations that add new errors.
+- name: ai-exhibit-audit
+  group: workflow
+  status: active
+  title: AI exhibit auditor
+  blurb: Monthly test of the Library's own AI guides (Campfire, Talk with the President). Asks a bank of visitor questions,
+    including trap questions, and runs every answer through the panel.
+- name: accuracy-monitor
+  group: workflow
+  status: active
+  title: Accuracy monitor
+  blurb: The scheduled watcher. Reviews only what changed on /tr, exhibit and quiz pages, and re-checks a random 5% of past
+    verdicts each quarter to track the error rate.
 - name: review-lenses
   group: workflow
   status: active
@@ -1919,3 +1937,45 @@ specialists:
     - metropolitan
     - wire report
     - dispatch
+- name: sp-period-visuals
+  group: media
+  status: active
+  title: Period visuals
+  blurb: Does the picture look right for its year? Flag stars, uniforms, rifles, clothes, landscape then vs now, and
+    no AI-generated buildings.
+  routes:
+    types:
+    - image_id
+    - other
+    keywords:
+    - illustration
+    - ai-generated
+    - generated image
+    - reconstruction
+    - reenactment
+    - animation
+    - rendering
+    - flag
+    - uniform
+    - costume
+    - storyboard
+    - prompt
+- name: sp-pronunciation
+  group: media
+  status: active
+  title: Pronunciation guide
+  blurb: How to say it on air. Sourced pronunciations for family names, people and places in audio tours, video and AI
+    voices. Indigenous names go to the nations' guidance and human reviewers.
+  routes:
+    types:
+    - name
+    keywords:
+    - pronounce
+    - pronunciation
+    - narration
+    - voiceover
+    - voice-over
+    - audio tour
+    - podcast
+    - script
+    - docent

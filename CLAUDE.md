@@ -23,7 +23,7 @@ A Claude plugin (`plugins/historian-panel`) with:
 
 ## When to use it
 
-Use `historian-panel:accuracy-review` **every time** any of these is true:
+Use `historian-panel:accuracy-review` **every time** any of these is true (and `quiz-check` for quizzes):
 
 - You are drafting or editing something that carries a historical claim under
   the Library's name: web copy, captions, alt text, social posts, newsletters,
@@ -87,6 +87,11 @@ are the signal to build a planned specialist.
 | "Give me a T.R. quote about X" | `/historian-panel:sp-quote-finder <subject and use>` |
 | "Is this OTD post right?" | `/historian-panel:accuracy-review review <draft>` (the OTD specialist takes a required seat) |
 | "Check house style" | `/historian-panel:style-check <text>` |
+| "Check this quiz," trivia, polls | `/historian-panel:quiz-check <quiz>` |
+| "Does this image look right for 1885?" | `/historian-panel:accuracy-review review <image and caption>` (the period-visuals specialist takes a required seat) |
+| "How do we pronounce ...?" before recording | `/historian-panel:accuracy-review review <script>` (the pronunciation specialist takes a required seat) |
+| "Test Campfire / Talk with the President" | `/historian-panel:ai-exhibit-audit <assistant>` |
+| "What changed on the site?" "Re-check old verdicts" | `/historian-panel:accuracy-monitor changes` or `recheck` |
 | "Set up," "update," "is it working?" | `/historian-panel:panel-setup` |
 | "Add a specialist," "teach the panel," "update the skills" | `/historian-panel:propose-skill <what and why>` |
 
