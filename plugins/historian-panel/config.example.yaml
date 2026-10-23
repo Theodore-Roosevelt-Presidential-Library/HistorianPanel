@@ -24,6 +24,13 @@ corpora:
   books_mcp: ""        # e.g. the book-corpus search server
   archive_mcp: ""      # e.g. the archive transcript search server
 
+# The TRA Chronological Record source scans, for sp-tra and sp-on-this-day.
+tra_chronology_path: ""
+
+# The Library's quote archive export (Theodore Roosevelt Center records), for
+# sp-quote-finder.
+quote_archive_path: ""
+
 # Index of the book corpus by author: title, year, genre, and which
 # specialists' subjects each book covers most. Built locally from the corpus
 # (trpl-rag/hp_author_index/build.py). Used by sp-biographies,

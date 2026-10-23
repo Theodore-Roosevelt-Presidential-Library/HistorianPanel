@@ -2,7 +2,7 @@
 
 <!-- Generated from plugins/historian-panel/roster.yaml by scripts/build_roster_md.py. Do not edit by hand. -->
 
-HistorianPanel has **69 members**: 69 at work and 0 planned. Each one is a specialist in one slice of Theodore Roosevelt's world. None of them answers from memory. They know *where to look* and *what usually goes wrong*, and they bring back sources.
+HistorianPanel has **78 members**: 78 at work and 0 planned. Each one is a specialist in one slice of Theodore Roosevelt's world. None of them answers from memory. They know *where to look* and *what usually goes wrong*, and they bring back sources.
 
 You don't need to pick a specialist. Ask Claude to check something ("Is this caption right?", "Review this page") and the coordinator sends each claim to the right two or three members. Every claim gets a second, blind check from a different member before it is closed.
 
@@ -22,6 +22,9 @@ They run the review itself. You rarely call them by name; the coordinator does.
 | [Skill builder](plugins/historian-panel/skills/propose-skill/SKILL.md)<br>`propose-skill` | Drafts a new specialist or improves an existing one, as a pull request a person reviews. | Active |
 | [Setup and updates](plugins/historian-panel/skills/panel-setup/SKILL.md)<br>`panel-setup` | Installs the panel, updates it, and runs a quick health check. | Active |
 | [House style checker](plugins/historian-panel/skills/style-check/SKILL.md)<br>`style-check` | Kettle Hill not San Juan Hill, buttes not mesas, T.R. not Teddy, participants, Trustees, Benefactors. | Active |
+| [Quiz checker](plugins/historian-panel/skills/quiz-check/SKILL.md)<br>`quiz-check` | Checks every quiz option, not just the answer. Catches wrong answer keys, distractors that are secretly true, and explanations that add new errors. | Active |
+| [AI exhibit auditor](plugins/historian-panel/skills/ai-exhibit-audit/SKILL.md)<br>`ai-exhibit-audit` | Monthly test of the Library's own AI guides (Campfire, Talk with the President). Asks a bank of visitor questions, including trap questions, and runs every answer through the panel. | Active |
+| [Accuracy monitor](plugins/historian-panel/skills/accuracy-monitor/SKILL.md)<br>`accuracy-monitor` | The scheduled watcher. Reviews only what changed on /tr, exhibit and quiz pages, and re-checks a random 5% of past verdicts each quarter to track the error rate. | Active |
 | [Scholarly lenses](plugins/historian-panel/skills/review-lenses/SKILL.md)<br>`review-lenses` | Reads a piece the way a biographer, documentary editor, political, critical, regional, military or natural historian would, to catch omissions and framing a fact-check misses. | Active |
 | [Scholar review packet](plugins/historian-panel/skills/scholar-review-packet/SKILL.md)<br>`scholar-review-packet` | Prepares a 20-minute packet so a real historian can review a high-stakes piece and make the calls that need a person. | Active |
 | [Scholarly debate](plugins/historian-panel/skills/scholarly-debate/SKILL.md)<br>`scholarly-debate` | Puts the documented positions of different eras of scholarship in a cited debate, then maps where they really disagree and suggests even-handed framing. | Active |
@@ -76,6 +79,7 @@ Subjects that run through his whole life, plus a few cross-cutting checks.
 | [Hard chapters](plugins/historian-panel/skills/sp-hard-chapters/SKILL.md)<br>`sp-hard-chapters` | Race, Brownsville, empire, immigration and other subjects that need the most care. Flags and gathers sources; people decide. | Active |
 | [Medicine and health](plugins/historian-panel/skills/sp-medicine-health/SKILL.md)<br>`sp-medicine-health` | Asthma, his eye injury, the Amazon fevers, the 1912 bullet, and how family members died. | Active |
 | [Sports and the strenuous life](plugins/historian-panel/skills/sp-sports-strenuous-life/SKILL.md)<br>`sp-sports-strenuous-life` | Boxing, jiu-jitsu, rowing, point-to-point walks, and saving college football. | Active |
+| [On This Day](plugins/historian-panel/skills/sp-on-this-day/SKILL.md)<br>`sp-on-this-day` | Did it really happen on this date? Anniversary counts, report dates vs event dates, holidays on Sundays, overnight cables. | Active |
 
 ## Primary collections and where they live
 
@@ -91,6 +95,8 @@ Archives and libraries. They know how a collection is organized, what is digitiz
 | [Period newspapers](plugins/historian-panel/skills/sp-period-newspapers/SKILL.md)<br>`sp-period-newspapers` | Chronicling America and other archives: dating reports, wire stories, OCR traps. | Active |
 | [T.R.'s texts and editions](plugins/historian-panel/skills/sp-published-works/SKILL.md)<br>`sp-published-works` | Which edition says what: speeches, the Works, the Letters, and scans to read them in. | Active |
 | [Museum specimens and expedition records](plugins/historian-panel/skills/sp-museum-specimens/SKILL.md)<br>`sp-museum-specimens` | Smithsonian, AMNH and other records of what T.R. collected, and where it went. | Active |
+| [Theodore Roosevelt Association](plugins/historian-panel/skills/sp-tra/SKILL.md)<br>`sp-tra` | The TRA's day-by-day Chronological Record and its Journal: what an entry says, what it rests on, and how far to trust it. | Active |
+| [Theodore Roosevelt Cyclopedia](plugins/historian-panel/skills/sp-tr-cyclopedia/SKILL.md)<br>`sp-tr-cyclopedia` | The topical index of T.R.'s words: find what he said on a subject, then trace it to the original speech, letter or book. | Active |
 
 ## Biographies, historiography and quotes
 
@@ -105,6 +111,7 @@ What has been written about T.R., how reliable it is, and how views have changed
 | [Myths and misattributions](plugins/historian-panel/skills/sp-myths/SKILL.md)<br>`sp-myths` | Famous stories and quotes that aren't quite true, or aren't true at all. | Active |
 | [Book citations](plugins/historian-panel/skills/sp-book-citations/SKILL.md)<br>`sp-book-citations` | Titles, authors, publishers, years and ISBNs on reading lists. Does the book even exist? | Active |
 | [What historians wrote](plugins/historian-panel/skills/sp-scholarly-perspectives/SKILL.md)<br>`sp-scholarly-perspectives` | How the major biographers actually treat a subject, with page citations, and where they disagree. Never speaks for them. | Active |
+| [Quote finder](plugins/historian-panel/skills/sp-quote-finder/SKILL.md)<br>`sp-quote-finder` | "Give me a T.R. quote about public lands." Only lines found word for word in a primary text or the verified list, with the citation and context. | Active |
 
 ## Context of the times
 
@@ -132,6 +139,8 @@ Pictures, film, maps and things.
 | [Honors and namesakes](plugins/historian-panel/skills/sp-honors-namesakes/SKILL.md)<br>`sp-honors-namesakes` | The Rio Roosevelt, the teddy bear, ships, schools, awards and stamps named for him, and when. | Active |
 | [Legacy and commemoration](plugins/historian-panel/skills/sp-legacy-commemoration/SKILL.md)<br>`sp-legacy-commemoration` | Memorials, monuments, anniversaries, Mount Rushmore, and how T.R. has been remembered. | Active |
 | [Press and publicity](plugins/historian-panel/skills/sp-press-publicity/SKILL.md)<br>`sp-press-publicity` | The bully pulpit, reporters, muckrakers, staged photographs, and wire reports vs eyewitnesses. | Active |
+| [Period visuals](plugins/historian-panel/skills/sp-period-visuals/SKILL.md)<br>`sp-period-visuals` | Does the picture look right for its year? Flag stars, uniforms, rifles, clothes, landscape then vs now, and no AI-generated buildings. | Active |
+| [Pronunciation guide](plugins/historian-panel/skills/sp-pronunciation/SKILL.md)<br>`sp-pronunciation` | How to say it on air. Sourced pronunciations for family names, people and places in audio tours, video and AI voices. Indigenous names go to the nations' guidance and human reviewers. | Active |
 
 ## Want another specialist?
 

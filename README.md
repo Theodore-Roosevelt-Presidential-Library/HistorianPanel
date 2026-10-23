@@ -50,7 +50,7 @@ and nothing an AI writes counts as a source. The rules are in
 
 ## The panel
 
-69 members, all active. [ROSTER.md](ROSTER.md) introduces each one.
+78 members, all active. [ROSTER.md](ROSTER.md) introduces each one.
 
 - **Periods of T.R.'s life**, from his 1858 birth to his death in 1919.
 - **Family and circle**: Edith, Alice, the children, the Badlands partners, friends and rivals.
