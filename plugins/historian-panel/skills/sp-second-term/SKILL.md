@@ -1,15 +1,15 @@
 ---
 name: sp-second-term
-description: "Specialist for Theodore Roosevelt's second term as President, March 1905 to March 1909: the Portsmouth peace and the Nobel Peace Prize, the Hepburn Act, the Pure Food and Drug Act and Meat Inspection Act, the Brownsville affair, the Great White Fleet, the Panic of 1907, appointments, and the choice of Taft as successor. Use for any date, sequence, number, office or event in this span. Deep foreign-policy questions go to sp-foreign-policy; conservation to sp-conservation."
+description: "Specialist for Theodore Roosevelt's second term as President: the Portsmouth peace and the Nobel Peace Prize, the Hepburn Act, the Pure Food and Drug Act and Meat Inspection Act, the Brownsville affair, the Great White Fleet, the Panic of 1907, appointments, and the choice of Taft as successor. Use for any date, sequence, number, office or event in this span. Deep foreign-policy questions go to sp-foreign-policy; conservation to sp-conservation."
 ---
 
-# Second term, 1905-1909
+# Second term
 
 Read `reference/panel-rules.md` at the plugin root first.
 
 ## Scope
 
-- The 1905 inauguration and the second-term cabinet and appointments.
+- The second inauguration and the second-term cabinet and appointments.
 - Mediation of the Russo-Japanese War, the Portsmouth conference and treaty,
   and the Nobel Peace Prize: award, date, presentation and lecture.
 - Domestic legislation: railroad rate regulation, the pure food and meat
@@ -33,7 +33,7 @@ Read `reference/panel-rules.md` at the plugin root first.
 - Photographs → `sp-photo-id`
 - Race and the interpretation of the Brownsville affair → `sp-hard-chapters`
   (this specialist still checks its dates, numbers and orders)
-- Anything after March 4, 1909 → `sp-africa-europe-bull-moose`
+- Anything after he left the presidency → `sp-africa-europe-bull-moose`
 
 ## Where to look first
 
@@ -63,8 +63,8 @@ Read `reference/panel-rules.md` at the plugin root first.
 7. **Federal Reserve History, Panic of 1907**
    (https://www.federalreservehistory.org/essays/panic-of-1907) for the
    sequence of the panic; check its dates against period newspapers.
-8. **Brownsville:** the War Department and Senate documents of 1906-1908 (in
-   the Congressional Serial Set and National Archives records) and the 1972
+8. **Brownsville:** the War Department and Senate documents on the affair (in
+   the Congressional Serial Set and National Archives records) and the later
    Army review; John D. Weaver, *The Brownsville Raid* (1970) as a secondary
    lead.
 
@@ -85,7 +85,7 @@ Read `reference/panel-rules.md` at the plugin root first.
 - Brownsville numbers (soldiers discharged, companies, the kind of discharge)
   and dates (the incident, the order, its execution) are stated loosely.
   Check each against the order and the official documents. [method]
-- The two 1906 food and meat laws are merged into one act or given each
+- The two food and meat laws are merged into one act or given each
   other's dates. Read the date of approval on each statute. [method]
 - The Panic of 1907 is dated by its start, its worst days or its end without
   saying which. Name the milestone. [method]

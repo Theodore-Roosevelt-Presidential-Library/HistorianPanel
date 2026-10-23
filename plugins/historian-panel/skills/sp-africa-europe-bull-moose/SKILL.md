@@ -1,9 +1,9 @@
 ---
 name: sp-africa-europe-bull-moose
-description: "Specialist for Theodore Roosevelt from March 1909 through 1912: the Smithsonian-Roosevelt African Expedition and its specimens, the 1910 European tour and its addresses (Cairo, the Sorbonne, Kristiania and the Nobel lecture, Berlin, Oxford, the Guildhall), the return home, the 1910 western tour and the New Nationalism, the break with Taft, the 1912 Republican convention, the Progressive Party campaign, the Milwaukee shooting and the 1912 results. Use for any date, place, number, sequence or event in this span."
+description: "Specialist for Theodore Roosevelt after the presidency through 1912: the Smithsonian-Roosevelt African Expedition and its specimens, the 1910 European tour and its addresses, the return home, the 1910 western tour and the New Nationalism, the break with Taft, the 1912 Republican convention, the Progressive Party campaign, the Milwaukee shooting and the 1912 results. Use for any date, place, number, sequence or event in this span."
 ---
 
-# Africa, Europe and the Bull Moose, 1909-1912
+# Africa, Europe and the Bull Moose
 
 Read `reference/panel-rules.md` at the plugin root first.
 
@@ -12,9 +12,9 @@ Read `reference/panel-rules.md` at the plugin root first.
 - The African expedition: sponsors, members, route, dates of departure and
   return, and the specimens collected and where they went.
 - The 1910 European tour: itinerary, the addresses and where each was given,
-  honors received, the funeral of Edward VII.
-- The return to New York and the 1910 midterm season, including the Osawatomie
-  address and other speeches later collected as *The New Nationalism*.
+  honors received, and the ceremonial occasions he attended.
+- The return to New York and the 1910 midterm season, including the speeches of the
+  western tour and the book *The New Nationalism*.
 - The rift with Taft, the 1912 primaries and Republican convention, the founding
   of the Progressive Party, its convention and platform.
 - The 1912 campaign: the shooting in Milwaukee, the speech that followed, his

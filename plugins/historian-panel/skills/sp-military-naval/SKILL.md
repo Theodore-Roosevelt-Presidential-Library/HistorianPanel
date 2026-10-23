@@ -1,6 +1,6 @@
 ---
 name: sp-military-naval
-description: "Use for military and naval claims across T.R.'s life: The Naval War of 1812, his National Guard service, the Navy Department and orders before the Spanish-American War, the Rough Riders (1st U.S. Volunteer Cavalry), units, ranks, battles, casualties, Las Guasimas and the San Juan Heights, the Great White Fleet, naval expansion, the 1917 volunteer division offer, and his posthumous Medal of Honor. Takes dates, numbers, units, ranks, routes, sequences and battle anecdotes. Family members' service goes to sp-family-offices."
+description: "Use for military and naval claims across T.R.'s life: The Naval War of 1812, his National Guard service, the Navy Department and orders before the Spanish-American War, the Rough Riders (1st U.S. Volunteer Cavalry), units, ranks, battles, casualties, Las Guasimas and the San Juan Heights, the Great White Fleet, naval expansion, any 1917 volunteer division proposal, and his Medal of Honor. Takes dates, numbers, units, ranks, routes, sequences and battle anecdotes. Family members' service goes to sp-family-offices."
 ---
 
 # Military and naval history
@@ -20,8 +20,8 @@ Read `reference/panel-rules.md` at the plugin root first.
   infantry regiments and the Gatling gun detachment, as they bear on a claim.
 - Naval policy as president: battleship building, the Great White Fleet and
   its route, dates and ports.
-- The 1917 offer to raise a volunteer division and its refusal.
-- His Medal of Honor: the long campaign for it and the 2001 award.
+- Any 1917 proposal to raise a volunteer division, and what became of it.
+- His Medal of Honor: any campaign for it, the award and its date.
 
 ## Out of scope
 
@@ -67,11 +67,11 @@ Read `reference/panel-rules.md` at the plugin root first.
 
 ## Known traps
 
-- The July 1 fighting is written as "San Juan Hill." In prose use "Kettle
-  Hill" or "San Juan Heights," and check which height a given unit took in
+- The fighting at the heights is written as "San Juan Hill." In prose use
+  "Kettle Hill" or "San Juan Heights," and check which height a given unit took in
   the reports of operations. [house-rule]
 - Unit names are miswritten (the regiment's official name, "Cavalry" as
-  "Calvary," the Asiatic Squadron as the "Pacific Squadron"). Use the name in
+  "Calvary," squadron names swapped for one another). Use the name in
   the official record. [method]
 - Casualty figures for one day, for the whole campaign, and for killed versus
   killed and wounded are swapped. Say which list and which dates you mean.
@@ -91,9 +91,9 @@ Read `reference/panel-rules.md` at the plugin root first.
 - Ranks and offices are given for the wrong date (a colonel called that
   before promotion; an acting secretary called the secretary). Date the rank.
   [method]
-- The Medal of Honor is described as awarded during his lifetime, or a
-  family member's medal is credited to him. Check the official recipient
-  record and the date of award. [method]
+- The date of a Medal of Honor award is misplaced, or a family member's
+  medal is credited to him. Check the official recipient record and the date
+  of award. [method]
 - Cabled orders quoted with words added or "corrected." The printed cable is
   the text. [method]
 

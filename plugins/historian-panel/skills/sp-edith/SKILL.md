@@ -1,6 +1,6 @@
 ---
 name: sp-edith
-description: "Use for any claim about Edith Kermit Carow Roosevelt: her childhood friendship with the Roosevelt children, their wedding in London, running Sagamore Hill, her years as First Lady, the White House renovation and the White House social office, her role as T.R.'s counselor, and her long widowhood, travels and death. Takes dates, places, names, life events and characterizations of her character or influence."
+description: "Use for any claim about Edith Kermit Carow Roosevelt: her early ties to the Roosevelt family, her marriage to T.R., running Sagamore Hill, her years as First Lady, the White House renovation and the White House social office, her role as T.R.'s counselor, and her long widowhood, travels and death. Takes dates, places, names, life events and characterizations of her character or influence."
 ---
 
 # Edith Kermit Carow Roosevelt
@@ -9,8 +9,8 @@ Read `reference/panel-rules.md` at the plugin root first.
 
 ## Scope
 
-- Edith's family, childhood and youth in New York, including her friendship
-  with the Roosevelt children and with Corinne.
+- Edith's family, childhood and youth in New York, including her ties to
+  the Roosevelt family.
 - Her courtship with and marriage to T.R., the wedding and the honeymoon.
 - Sagamore Hill as her household: management, money, servants, the children's
   upbringing, and her raising of her stepdaughter Alice.
@@ -75,9 +75,8 @@ Read `reference/panel-rules.md` at the plugin root first.
 - Her political role is framed with a superlative ("almost unprecedented for
   a woman of her era") that no source supports. Describe what she did; send
   any comparison to `sp-superlatives`. [ref: B-04]
-- Spans between family events are estimated instead of computed (how long
-  Alice lived apart from her father before the remarriage, how old a child was
-  at a move). Compute from two sourced dates. [method]
+- Spans between family events are estimated instead of computed (how long a child
+  lived in a given household, how old a child was at a move). Compute from two sourced dates. [method]
 - Characterizations of her temperament or of her relationship with Alice come
   from one later memoir and are presented as settled. Name whose view it is.
   [method]

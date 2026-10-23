@@ -1,6 +1,6 @@
 ---
 name: sp-alice-longworth
-description: "Use for any claim about Alice Roosevelt Longworth: her childhood after her mother's death in 1884, her upbringing by her aunt and stepmother, her White House years and celebrity, the 1905 Asia trip with the Taft party, the 1906 White House wedding to Nicholas Longworth, her Washington social and political life, her memoir Crowded Hours, and her later years. Takes dates, places, names, life events, anecdotes and the attribution of her quips (wording goes to sp-quote-verifier)."
+description: "Use for any claim about Alice Roosevelt Longworth: her childhood after her mother's death, her upbringing and households, her White House years and celebrity, the Asia trip with the Taft party, her wedding to Nicholas Longworth, her Washington social and political life, her memoir Crowded Hours, and her later years. Takes dates, places, names, life events, anecdotes and the attribution of her quips (wording goes to sp-quote-verifier)."
 ---
 
 # Alice Roosevelt Longworth
@@ -13,12 +13,12 @@ Read `reference/panel-rules.md` at the plugin root first.
   place in the household after T.R. remarried.
 - Her White House years: public celebrity, press coverage, debut, conduct
   that made news, and stories about her pets, cars and habits.
-- The 1905 trip to Asia with the Taft party: route, people, events and her
+- The trip to Asia with the Taft party: route, people, events and her
   status on the trip.
-- The 1906 White House wedding to Nicholas Longworth and the gifts, guests
+- Her wedding to Nicholas Longworth and the gifts, guests
   and reporting around it.
 - Her Washington life: her husband's career as she figured in it, her house,
-  her salon, her political alignments, and the 1912 and 1919-1920 fights as
+  her salon, her political alignments, and the party and policy fights as
   she took part.
 - *Crowded Hours* (1933) and her other writing; interviews late in life.
 - Whether a quip or line is attributed to the right speaker and occasion.
@@ -53,7 +53,7 @@ Read `reference/panel-rules.md` at the plugin root first.
    arranged, which helps with negative claims.
 4. **Period newspapers, through Chronicling America
    (chroniclingamerica.loc.gov) and other holders' scans.** Essential for
-   1902-1912 society and political reporting. Many famous stories began as
+   society and political reporting of her day. Many famous stories began as
    gossip items; report what the paper said and when, not that it happened.
 5. **Smithsonian National Museum of Asian Art archives, "Alice in Asia: The
    1905 Taft Mission" (archive.asia.si.edu/research/archives/alice).**
@@ -92,7 +92,7 @@ Read `reference/panel-rules.md` at the plugin root first.
   from a modern retelling. Use the period reporting of the day itself and the
   White House record. [method]
 - Late-life interviews are treated as contemporary evidence for events
-  seventy years earlier. Prefer the contemporary record and note the gap.
+  decades earlier. Prefer the contemporary record and note the gap.
   [method]
 - The Library's own family pages and tools are not sources. [house-rule]
 

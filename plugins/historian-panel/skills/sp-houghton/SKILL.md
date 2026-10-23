@@ -58,8 +58,8 @@ Read `reference/panel-rules.md` at the plugin root first.
 - A photo credit "Harvard College Library" is used as if it identified the
   people, date or place. A credit says who holds the print; only the catalog
   record (and its notes) supports an identification. [method]
-- Folder titles in finding aids summarize contents ("Letters to Anna Roosevelt
-  Cowles, 1890-1895"). A folder title is not evidence that a specific letter or
+- Folder titles in finding aids summarize contents ("Letters to [recipient],
+  [years]"). A folder title is not evidence that a specific letter or
   sentence is inside. Read the item or its image. [method]
 - The collection holds copies, transcripts and photostats of documents whose
   originals are elsewhere. Check whether a Harvard item is an original or a

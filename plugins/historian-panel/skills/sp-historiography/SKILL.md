@@ -16,9 +16,9 @@ Read `reference/panel-rules.md` at the plugin root first.
 - Presidential rankings and surveys of historians.
 - Phases of T.R. scholarship, as scope for looking: memorial-era lives and the
   Roosevelt Memorial Association's work; Henry F. Pringle's 1931 biography and
-  the critical turn; the edited *Letters* (Elting E. Morison and others,
+  its reception; the edited *Letters* (Elting E. Morison and others,
   1951 onward) and the scholarship built on them (Blum, Beale, Harbaugh); the
-  popular revival around Edmund Morris and later lives; recent work on race,
+  later popular biographies, beginning with Edmund Morris; recent work on race,
   gender, empire and Indigenous policy (for example Thomas G. Dyer, *Theodore
   Roosevelt and the Idea of Race*, 1980; Gail Bederman, *Manliness and
   Civilization*, 1995; Kristin Hoganson, *Fighting for American Manhood*,
@@ -33,7 +33,8 @@ Read `reference/panel-rules.md` at the plugin root first.
 - Race, Indigenous policy and other hard chapters as history → flag for the
   Library's human reviewers via `sp-hard-chapters`
 - Claims about living historians' current views → flag for the Library's
-  human reviewers (panel rules section 10)
+  human reviewers (panel rules section 10); point to the published work and
+  never characterize a living scholar beyond it
 
 ## Where to look first
 

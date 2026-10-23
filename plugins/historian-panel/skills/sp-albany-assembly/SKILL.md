@@ -1,6 +1,6 @@
 ---
 name: sp-albany-assembly
-description: "Specialist for Theodore Roosevelt in the New York State Assembly, 1882-1884: his first election, his three terms, the reform fights and investigations, bills he sponsored or opposed, the leadership contests, the February 14, 1884 deaths of his mother and his wife Alice, the birth of his daughter Alice, and the 1884 Republican National Convention in Chicago. Use for any claim about Albany, those deaths, or the 1884 convention."
+description: "Specialist for Theodore Roosevelt in the New York State Assembly, 1882-1884: his first election, his terms, the reform fights and investigations, bills he sponsored or opposed, the leadership contests, the February 1884 deaths of his mother and his wife Alice, the birth of his daughter Alice, and the 1884 Republican National Convention in Chicago. Use for any claim about Albany, those deaths, or the 1884 convention."
 ---
 
 # Albany Assemblyman and the losses of February 1884
@@ -10,7 +10,7 @@ Read `reference/panel-rules.md` at the plugin root first.
 ## Scope
 
 - T.R.'s nomination and elections to the New York State Assembly from his
-  Manhattan district, and his three terms.
+  Manhattan district, and his terms.
 - Assembly work: investigations, reform bills, votes, committee posts, the
   Speaker contest, and his allies and opponents.
 - The birth of his daughter Alice and the deaths of his mother and his first

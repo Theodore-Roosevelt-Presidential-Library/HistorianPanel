@@ -11,8 +11,8 @@ Read `reference/panel-rules.md` at the plugin root first.
 
 - The physical history of places tied to T.R.: built, altered, demolished,
   rebuilt, moved, restored.
-- The birthplace townhouse and its reconstruction; Sagamore Hill; the Maltese
-  Cross cabin and the Elkhorn ranch site; the Wilcox House in Buffalo; Theodore
+- The birthplace townhouse and its building history; Sagamore Hill; the Maltese
+  Cross cabin and the Elkhorn ranch site; the Wilcox House; Theodore
   Roosevelt Island; Pine Knot; and other homes and lodgings.
 - Designations and ownership: national historic site, national memorial,
   National Register and Landmark status; which agency or group owns and runs it.

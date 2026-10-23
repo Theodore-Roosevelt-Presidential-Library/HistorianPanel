@@ -78,10 +78,12 @@ Read `reference/panel-rules.md` at the plugin root first.
   source (panel rules section 2). [method]
 - A line T.R. wrote in more than one form (a speech, a later letter) is blended
   in secondary retellings. Cite one version. [ref: D-26]
-- The 1883 trip and the 1884 return are merged in retellings, so ages and
-  circumstances are mixed. [ref: D-23]
-- Events placed in Dakota actually happened across the line in Montana
-  Territory. [ref: D-25]
+- Separate visits to the Badlands are merged in retellings, so ages and
+  circumstances are mixed. Pin each episode to its own visit and date.
+  [ref: D-23]
+- Events are placed in the wrong territory or on the wrong side of a
+  boundary. Check which jurisdiction a place belonged to on that date.
+  [ref: D-25]
 - North Dakota landforms are buttes, never mesas, even when a secondary source
   says otherwise. [house-rule]
 - The Library's own Badlands tools, timelines and datasets are not sources.

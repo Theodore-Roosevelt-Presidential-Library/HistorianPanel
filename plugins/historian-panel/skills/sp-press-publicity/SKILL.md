@@ -10,7 +10,7 @@ Read `reference/panel-rules.md` at the plugin root first.
 ## Scope
 
 - T.R.'s relations with reporters and editors: access, favored correspondents,
-  briefings, leaks, the press room in the executive offices.
+  briefings, leaks, the White House press room.
 - The "bully pulpit": where the phrase comes from and how it is used.
 - The speech on the man with the muck-rake, every occasion on which he used
   the theme, and the history of the word muckraker.

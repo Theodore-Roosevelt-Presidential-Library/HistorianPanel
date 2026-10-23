@@ -1,6 +1,6 @@
 ---
 name: sp-return-east
-description: "Specialist for Theodore Roosevelt's return east, 1886-1889: the 1886 New York City mayoral race, his marriage to Edith Kermit Carow in London and their wedding trip, setting up the Sagamore Hill household at Oyster Bay with daughter Alice, the births of children in these years, and the books he wrote and published in this period. Use for any claim about T.R. in New York, London or Oyster Bay between leaving ranch life and joining the Civil Service Commission. Badlands-specific claims go to sp-badlands."
+description: "Specialist for Theodore Roosevelt's return east, 1886-1889: the 1886 New York City mayoral race, his marriage to Edith Kermit Carow and their wedding trip, setting up the Sagamore Hill household at Oyster Bay with daughter Alice, the births of children in these years, and the books he wrote and published in this period. Use for any claim about T.R. in New York, abroad on his wedding trip or at Oyster Bay between leaving ranch life and joining the Civil Service Commission. Badlands-specific claims go to sp-badlands."
 ---
 
 # Return east, 1886-1889
@@ -11,7 +11,7 @@ Read `reference/panel-rules.md` at the plugin root first.
 
 - The 1886 New York City mayoral campaign: his nomination, the other
   candidates, the result and the official returns.
-- His engagement and marriage to Edith Kermit Carow in London, the wedding
+- His engagement and marriage to Edith Kermit Carow, the wedding
   party and the trip that followed.
 - The Sagamore Hill household: moving in, daughter Alice's place in it, and
   children born in these years.
@@ -46,8 +46,8 @@ Read `reference/panel-rules.md` at the plugin root first.
 3. **NYC Municipal Archives** (https://www.archives.nyc/): city records,
    including the official canvass of votes. Newspaper election-night figures
    are not the official count.
-4. **The London parish marriage register** for the church where they married,
-   held by the London Metropolitan Archives, and the civil registration
+4. **The parish marriage register** for the church where they married (find
+   which archive holds it), and the civil registration
    record. Use these for date, church and witnesses rather than a biography.
 5. **National Park Service, Sagamore Hill National Historic Site**
    (https://www.nps.gov/sahi/): history pages on the house, the family and the

@@ -1,6 +1,6 @@
 ---
 name: sp-honors-namesakes
-description: "Use for claims about things named for T.R. or honors given to him: the Rio Roosevelt, ships named Theodore Roosevelt, schools, towns, counties, parks, the teddy bear, awards in his name (including the NCAA Theodore Roosevelt Award), stamps, coins and medals, the Nobel Peace Prize, his likeness on Mount Rushmore, and the posthumous Medal of Honor. Covers when and by whom something was named or awarded."
+description: "Use for claims about things named for T.R. or honors given to him: the Rio Roosevelt, ships named Theodore Roosevelt, schools, towns, counties, parks, the teddy bear, awards in his name (including the NCAA Theodore Roosevelt Award), stamps, coins and medals, the Nobel Peace Prize, his likeness on Mount Rushmore, and the Medal of Honor. Covers when and by whom something was named or awarded."
 ---
 
 # Honors and namesakes
@@ -21,7 +21,7 @@ Read `reference/panel-rules.md` at the plugin root first.
 ## Out of scope
 
 - The Roosevelt houses and cabins as sites → `sp-roosevelt-sites`
-- Memorials, monuments and anniversary events after 1919 →
+- Memorials, monuments and anniversary events after his death →
   `sp-legacy-commemoration`
 - The battle actions behind the Medal of Honor → `sp-navy-rough-riders`
 - The physical medals and where they are now → `sp-objects`

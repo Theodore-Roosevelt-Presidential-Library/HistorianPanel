@@ -1,6 +1,6 @@
 ---
 name: sp-natural-history
-description: "Specialist for Theodore Roosevelt as naturalist and hunter: boyhood collecting and the Roosevelt Museum of Natural History, bird lists, species and subspecies named for or by him, hunting trips and game lists (the West, Africa 1909-1910, South America 1913-1914), which institution sponsored a collecting trip, the Boone and Crockett Club, and the nature-faker controversy. Use for any claim about animals he observed, shot, collected or wrote about. Museum catalog record lookups go to sp-museum-specimens."
+description: "Specialist for Theodore Roosevelt as naturalist and hunter: boyhood collecting and the Roosevelt Museum of Natural History, bird lists, species and subspecies named for or by him, hunting trips and game lists (the West, Africa, South America), which institution sponsored a collecting trip, the Boone and Crockett Club, and the nature-faker controversy. Use for any claim about animals he observed, shot, collected or wrote about. Museum catalog record lookups go to sp-museum-specimens."
 ---
 
 # Natural history and hunting
@@ -17,7 +17,7 @@ Read `reference/panel-rules.md` at the plugin root first.
 - Which institution sponsored or received a collecting trip's specimens.
 - The Boone and Crockett Club and his role in it.
 - The nature-faker controversy and his part in it.
-- Hunting anecdotes (the bear that gave the teddy bear its name, for example):
+- Hunting anecdotes (the bear episode linked to the teddy bear, for example):
   what happened, who was there, where.
 
 ## Out of scope
@@ -42,8 +42,8 @@ Read `reference/panel-rules.md` at the plugin root first.
    of the African expedition, accession records and correspondence. Best for
    which institution sponsored a trip and received its specimens.
 3. **American Museum of Natural History Research Library**
-   (https://www.amnh.org/research/research-library): archives for the South
-   American expedition and AMNH-linked collecting. Limit: much is not online.
+   (https://www.amnh.org/research/research-library): archives for AMNH
+   collecting and any expedition records it holds. Limit: much is not online.
 4. **Biodiversity Heritage Library** (https://www.biodiversitylibrary.org/):
    original species descriptions, Smithsonian Miscellaneous Collections, and
    museum bulletins. The original description settles who named a taxon and

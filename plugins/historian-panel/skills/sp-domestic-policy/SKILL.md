@@ -80,8 +80,8 @@ Read `reference/panel-rules.md` at the plugin root first.
   (minister versus ambassador, commissioner versus secretary). Check the
   Office of the Historian or the official register for the title held at the
   time. [ref: E-07]
-- T.R. is credited with coining a word or slogan he popularized or adapted.
-  Trace the earliest use in a dictionary of record before saying he coined it.
+- A word or slogan is credited to T.R. as his coinage without tracing earlier
+  use. Find the earliest use in a dictionary of record before saying he coined it.
   [ref: D-15]
 - Counts of executive orders depend on which compilation is used and whether
   unnumbered orders, proclamations and orders later assigned numbers are

@@ -32,8 +32,8 @@ Read `reference/panel-rules.md` at the plugin root first.
 ## Where to look first
 
 1. **Smithsonian Institution Archives**, https://siarchives.si.edu/ . Records of
-   the Smithsonian's African expedition and related correspondence, accession
-   records and photographs. Best for sponsorship and what was accessioned.
+   any expedition the Smithsonian sponsored or joined, with related
+   correspondence, accession records and photographs. Best for sponsorship and what was accessioned.
 2. **National Museum of Natural History collection databases**,
    https://collections.nmnh.si.edu/ , and the Smithsonian Collections Search
    Center, https://collections.si.edu/ . Specimen records with catalog numbers,
@@ -42,8 +42,7 @@ Read `reference/panel-rules.md` at the plugin root first.
 3. **American Museum of Natural History**: Research Library and archives
    (https://www.amnh.org/research/research-library) and the AMNH Library
    Digital Repository (https://digitallibrary.amnh.org/). Records of AMNH
-   involvement, including the South American expedition, and museum
-   publications.
+   involvement in T.R.-era expeditions, and museum publications.
 4. **Museum of Comparative Zoology, MCZbase**, https://mczbase.mcz.harvard.edu/ .
    Harvard's specimen database, including material from T.R.'s youth and
    college years.

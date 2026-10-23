@@ -1,6 +1,6 @@
 ---
 name: sp-medicine-health
-description: "Specialist for the health of Theodore Roosevelt and his family: childhood asthma and its treatments, eyesight and the White House boxing injury, illnesses and injuries on the Amazon expedition, the 1912 assassination attempt and the bullet, his final illnesses and cause of death, and the deaths of Alice Hathaway Lee and his mother Mittie. Use for any diagnosis, injury, treatment, cause of death, or medical anecdote. Military wound facts for his sons go to sp-family-offices."
+description: "Specialist for the health of Theodore Roosevelt and his family: childhood illnesses and their treatments, eyesight and any sport injuries, illnesses and injuries on the Amazon expedition, the 1912 assassination attempt and the bullet, his final illnesses and cause of death, and the deaths of Alice Hathaway Lee and his mother Mittie. Use for any diagnosis, injury, treatment, cause of death, or medical anecdote. Military wound facts for his sons go to sp-family-offices."
 ---
 
 # Medicine and health
@@ -9,9 +9,8 @@ Read `reference/panel-rules.md` at the plugin root first.
 
 ## Scope
 
-- T.R.'s childhood asthma and other childhood illnesses, and what was done for
-  them.
-- His eyesight and the eye injury from boxing.
+- T.R.'s childhood illnesses, and what was done for them.
+- His eyesight and any eye injury from sport.
 - Injuries and illnesses: accidents, the Amazon expedition, the bullet from
   the 1912 assassination attempt, and his last illnesses.
 - Causes of death for T.R., Alice Hathaway Lee Roosevelt, Martha Bulloch
@@ -40,8 +39,8 @@ Read `reference/panel-rules.md` at the plugin root first.
    (Chronicling America, https://www.loc.gov/collections/chronicling-america/).
    The period cause of death as recorded, in period terms.
 3. **T.R.'s own accounts**: *An Autobiography*
-   (https://www.gutenberg.org/ebooks/3335) for childhood health and the boxing
-   injury; *Through the Brazilian Wilderness*
+   (https://www.gutenberg.org/ebooks/3335) for his own account of childhood health
+   and any sport injury; *Through the Brazilian Wilderness*
    (https://www.gutenberg.org/ebooks/11746) for the expedition. His accounts
    are his claims and can be modest or vague.
 4. **National Park Service sites**: Theodore Roosevelt Birthplace
@@ -65,8 +64,8 @@ Read `reference/panel-rules.md` at the plugin root first.
 - A cause of death is stated more precisely than the record allows, or two
   different contemporary statements are blended. Quote what the record says
   and note where accounts differ. [method]
-- Deaths and illnesses in the same household on the same day are compressed
-  or rearranged (who died first, where, after how many days). Check each event
+- Deaths and illnesses close together in one household are compressed or
+  rearranged (who died first, where, after how many days). Check each event
   separately against family letters, diaries and death records. [method]
 - The timing of a diagnosis is moved: what was known before death is mixed
   with what was learned or named afterward. Say when each finding was made.

@@ -1,9 +1,9 @@
 ---
 name: sp-first-term
-description: "Specialist for Theodore Roosevelt's first term as President, September 1901 to March 1905: the transition and cabinet, the Northern Securities suit and decision, the 1902 anthracite coal strike and its commission, the Panama revolution, the canal treaty and Canal Zone, the Department of Commerce and Labor, and the 1904 nomination, campaign, results and election-night pledge. Use for any date, sequence, office, number or event in this span. Deep foreign-policy questions go to sp-foreign-policy; conservation to sp-conservation."
+description: "Specialist for Theodore Roosevelt's first term as President: the transition and cabinet, the Northern Securities suit and decision, the 1902 anthracite coal strike and its commission, the Panama revolution, the canal treaty and Canal Zone, the Department of Commerce and Labor, and the 1904 nomination, campaign, results and election-night pledge. Use for any date, sequence, office, number or event in this span. Deep foreign-policy questions go to sp-foreign-policy; conservation to sp-conservation."
 ---
 
-# First term, 1901-1905
+# First term
 
 Read `reference/panel-rules.md` at the plugin root first.
 
@@ -15,7 +15,7 @@ Read `reference/panel-rules.md` at the plugin root first.
 - The anthracite coal strike: the White House conference, the commission, the
   settlement and the return to work.
 - Panama as a first-term event: the Hay-Herrán and Hay-Bunau-Varilla treaties,
-  the November 1903 revolution, recognition, the Canal Zone, the start of U.S.
+  the revolution, recognition, the Canal Zone, the start of U.S.
   construction.
 - New departments and bureaus created in the term.
 - The 1904 Republican nomination, the campaign against Alton B. Parker, the
@@ -31,7 +31,7 @@ Read `reference/panel-rules.md` at the plugin root first.
 - "First president to..." and "never before" → `sp-superlatives`
 - Quotations → `sp-quote-verifier`
 - Photographs and captions → `sp-photo-id`
-- Anything after March 4, 1905 → `sp-second-term`
+- Anything after the second inauguration → `sp-second-term`
 
 ## Where to look first
 

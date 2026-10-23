@@ -1,6 +1,6 @@
 ---
 name: sp-legacy-commemoration
-description: "Use for claims about how T.R. has been remembered since his death: memorials and monuments (including removed or relocated ones), the Roosevelt Memorial Association, the Woman's Roosevelt Memorial Association and the Theodore Roosevelt Association, centennials and anniversaries, memorial legislation, the renaming of a national memorial park as a national park, and how anniversaries and 'years since' are counted."
+description: "Use for claims about how T.R. has been remembered since his death: memorials and monuments (including removed or relocated ones), the Roosevelt Memorial Association, the Woman's Roosevelt Memorial Association and the Theodore Roosevelt Association, centennials and anniversaries, memorial legislation, park designations and name changes, and how anniversaries and 'years since' are counted."
 ---
 
 # Legacy and commemoration
@@ -9,9 +9,9 @@ Read `reference/panel-rules.md` at the plugin root first.
 
 ## Scope
 
-- Memorial organizations after 1919: the Roosevelt Memorial Association, the
-  Woman's Roosevelt Memorial Association, their merger and the Theodore
-  Roosevelt Association.
+- Memorial organizations formed after his death: the Roosevelt Memorial
+  Association, the Woman's Roosevelt Memorial Association, any successor
+  bodies, and the Theodore Roosevelt Association.
 - Memorials and monuments: statues, memorial halls, plaques, and their
   dedication, alteration, relocation or removal.
 - Commemorative events: funerals and memorial services, centennials,

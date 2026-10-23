@@ -1,6 +1,6 @@
 ---
 name: sp-youth
-description: "Specialist for Theodore Roosevelt's youth, 1858-1876: his birth and childhood in New York City, the family household and homes, home schooling and tutors, the family trips abroad of 1869-70 and 1872-73, his boyhood diaries, early natural history collecting and taxidermy, and his preparation for the Harvard entrance exams. Use for any claim about T.R. before he entered college. Health specifics go to sp-medicine-health."
+description: "Specialist for Theodore Roosevelt's youth, 1858-1876: his birth and childhood in New York City, the family household and homes, home schooling and tutors, the family trips abroad, his boyhood diaries, early natural history collecting and taxidermy, and his preparation for the Harvard entrance exams. Use for any claim about T.R. before he entered college. Health specifics go to sp-medicine-health."
 ---
 
 # Youth, 1858-1876
@@ -14,8 +14,8 @@ Read `reference/panel-rules.md` at the plugin root first.
   these years, as they bear on T.R.'s own story.
 - Home schooling, tutors and the preparation for the Harvard entrance
   examinations.
-- The family trips to Europe and the Middle East, 1869-70 and 1872-73,
-  including the stay in Dresden, and summer homes.
+- The family trips abroad of his boyhood, including time spent in
+  Dresden, and summer homes.
 - Boyhood diaries, letters and notebooks.
 - Early natural history: collecting, taxidermy, the boyhood "museum," and
   early specimens given to institutions.

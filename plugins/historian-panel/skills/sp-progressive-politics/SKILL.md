@@ -21,15 +21,15 @@ Read `reference/panel-rules.md` at the plugin root first.
   carried, third-party and Socialist totals.
 - T.R.'s relationships with Taft and Wilson as political events (breaks,
   reconciliations, campaign attacks).
-- Third-term questions, including his 1904 election-night statement and how it
-  was later read.
+- Third-term questions, including any statement he made on the subject at
+  election time and how it was later read.
 
 ## Out of scope
 
 - Who held a cabinet or party office and in what order → `sp-officeholder-sequences`
 - "First," "only," "never before" claims about elections → `sp-superlatives`
   (also routed here for the political record)
-- The 1912 assassination attempt in Milwaukee and the campaign trail as
+- The 1912 assassination attempt and the campaign trail as
   biography → `sp-africa-europe-bull-moose`
 - Quotes from speeches, including the Progressive convention address →
   `sp-quote-verifier`
@@ -75,7 +75,7 @@ Read `reference/panel-rules.md` at the plugin root first.
   happened. Check that each item predates the campaign it is attached to.
   [ref: G-01]
 - "No president had ever" claims about declining or renouncing another term
-  ignore earlier presidents who did so. Search the earlier record before
+  go unchecked against earlier presidents. Search the earlier record before
   accepting. [ref: G-06]
 - Popular-vote figures vary between compilations, and percentages are computed
   on different bases (with or without minor parties). Give the source and
@@ -88,8 +88,8 @@ Read `reference/panel-rules.md` at the plugin root first.
   [method]
 - The Progressive Party's later history is collapsed into its founding year.
   Date each event separately from the record. [method]
-- "Bull Moose" is used as if it were the official name of the party. Use the
-  official name for formal claims and note the nickname. [method]
+- The party's nickname and its official name are conflated. Use the name in
+  the party's own documents for formal claims. [method]
 - Election Day, the electoral vote count in Congress and inauguration are
   different dates. Say which one the claim means. [method]
 

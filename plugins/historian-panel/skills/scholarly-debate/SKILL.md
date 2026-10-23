@@ -1,6 +1,6 @@
 ---
 name: scholarly-debate
-description: "Stage a structured, cited debate between the documented positions historians have taken on a Theodore Roosevelt question, often across decades (the 1920s memorial accounts, the 1930s debunkers, mid-century reassessments, the 1970s-80s revival, recent critical work). Use for contested questions of interpretation (Brownsville, Panama, the Bull Moose split, race and empire, the Badlands' effect on him) and for deciding how Library copy should frame a disputed subject. Produces a map of the disagreement, not a winner."
+description: "Stage a structured, cited debate between the documented positions historians have taken on a Theodore Roosevelt question, often across decades (memorial-era accounts, the 1930s, mid-century, the 1970s-80s, recent work). Use for contested questions of interpretation (Brownsville, Panama, the Bull Moose split, race and empire, the Badlands' effect on him) and for deciding how Library copy should frame a disputed subject. Produces a map of the disagreement, not a winner."
 argument-hint: "<the question> [positions or eras to include]"
 ---
 

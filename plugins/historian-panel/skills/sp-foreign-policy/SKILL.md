@@ -1,6 +1,6 @@
 ---
 name: sp-foreign-policy
-description: "Use for claims about T.R.'s diplomacy and foreign policy: the Venezuela crisis of 1902-1903, the Roosevelt Corollary, Panama and the canal treaty, Santo Domingo, the Portsmouth peace and the Nobel Peace Prize, Algeciras, the Gentlemen's Agreement, Root-Takahira, the Taft-Katsura memorandum, the Hague conferences, and the diplomats involved. Takes treaty dates and terms, sequences of events, diplomatic ranks (minister versus ambassador), who negotiated what, and characterizations of his role."
+description: "Use for claims about T.R.'s diplomacy and foreign policy: the Venezuela crisis, the Roosevelt Corollary, Panama and the canal treaty, Santo Domingo, the Portsmouth peace and the Nobel Peace Prize, Algeciras, the Gentlemen's Agreement, Root-Takahira, the Taft-Katsura memorandum, the Hague conferences, and the diplomats involved. Takes treaty dates and terms, sequences of events, diplomatic ranks (minister versus ambassador), who negotiated what, and characterizations of his role."
 ---
 
 # Foreign policy and diplomacy
@@ -9,16 +9,16 @@ Read `reference/panel-rules.md` at the plugin root first.
 
 ## Scope
 
-- Crises and settlements: Venezuela 1902-1903, the Alaska boundary, Santo
+- Crises and settlements: the Venezuela crisis, the Alaska boundary, Santo
   Domingo customs, the Roosevelt Corollary, Morocco and Algeciras.
-- Panama: the 1903 revolution, U.S. naval presence, recognition, the
+- Panama: the revolution, any U.S. naval presence, recognition, the
   Hay-Bunau-Varilla Treaty and canal construction as diplomacy.
-- Japan and Russia: mediation of the Russo-Japanese War, the Treaty of
+- Japan and Russia: T.R.'s role in the Russo-Japanese War settlement, the Treaty of
   Portsmouth and its terms, the Taft-Katsura memorandum, the Gentlemen's
   Agreement, Root-Takahira.
 - Arbitration and the Hague conferences.
-- The Nobel Peace Prize for 1906: award, reasons, presentation and his
-  later lecture.
+- The Nobel Peace Prize: award year, reasons, presentation and any
+  lecture.
 - Diplomatic posts and ranks of U.S. representatives abroad and foreign
   envoys in Washington.
 
@@ -75,19 +75,18 @@ Read `reference/panel-rules.md` at the plugin root first.
 - Proposals made during a negotiation are reported as the final terms, or
   the final terms are reported as T.R.'s proposal. Separate what was
   proposed, by whom, from what the treaty says. [method]
-- The Nobel Peace Prize is described as later than the war it rewarded, or
-  the award year, ceremony and lecture are merged. Use the Nobel record and
+- The award year, ceremony and lecture of the Nobel Peace Prize are merged,
+  or the prize is dated relative to the events it recognized. Use the Nobel record and
   give each its own date. [ref: G-01]
 - Naval events in the Panama revolution are compressed into a single
   dramatic statement ("the navy prevented a landing"). Read the FRUS cables
   for what each ship did and when. [method]
-- Executive agreements and exchanges of notes (Gentlemen's Agreement,
-  Root-Takahira, Taft-Katsura) are called treaties. Name the instrument
-  correctly. [method]
+- Agreements, memoranda and exchanges of notes (Gentlemen's Agreement,
+  Root-Takahira, Taft-Katsura) are mislabeled as treaties, or the reverse.
+  Name the instrument type from the document itself. [method]
 - Signature, ratification and proclamation dates are used interchangeably.
   Say which date you are giving. [method]
-- Famous lines about taking the canal zone are quoted in a smoothed-up
-  version. Send wording to `sp-quote-verifier`; check the venue and year
+- Famous lines about Panama are quoted in a smoothed-up version. Send wording to `sp-quote-verifier`; check the venue and year
   here. [method]
 - A policy is credited to T.R. alone when a Secretary of State or envoy
   drafted or negotiated it. Name who did what, from the documents. [method]

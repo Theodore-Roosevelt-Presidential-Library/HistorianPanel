@@ -1,9 +1,9 @@
 ---
 name: sp-last-years
-description: "Specialist for Theodore Roosevelt from 1913 to his death in January 1919: An Autobiography, the Roosevelt-Rondon Scientific Expedition and the River of Doubt, his illness and the river's renaming, the 1914-1916 preparedness campaign and his break with Wilson, his offer to raise a volunteer division, his sons' service in World War I, Quentin's death, his last illness and his death and burial at Oyster Bay. Use for any date, place, sequence, number or event in this span."
+description: "Specialist for Theodore Roosevelt from 1913 to his death: An Autobiography, the Roosevelt-Rondon Scientific Expedition and the River of Doubt, his illness and the river's renaming, the preparedness campaign and his relations with Wilson, his offer to raise a volunteer division, his sons' service in World War I, Quentin's death, his last illness, death and burial. Use for any date, place, sequence, number or event in this span."
 ---
 
-# River of Doubt, World War I and death, 1913-1919
+# River of Doubt, World War I and death
 
 Read `reference/panel-rules.md` at the plugin root first.
 
@@ -13,10 +13,10 @@ Read `reference/panel-rules.md` at the plugin root first.
 - The South American trip and the Roosevelt-Rondon Scientific Expedition:
   members, route, dates on the river, the illness, the naming of the river,
   the return and the dispute over the findings.
-- His writing and speaking on preparedness and the war, 1914-1918, his relations
+- His writing and speaking on preparedness and the war, his relations
   with the Wilson administration, and the volunteer-division proposal.
 - The family at war as it bears on T.R.: the sons' enlistments and units in
-  outline, Quentin's death and how and when the news reached Sagamore Hill.
+  outline, Quentin's death and how and when the news reached the family.
 - The 1916 and 1918 political seasons as they touch him.
 - His last illness, death, funeral and burial.
 

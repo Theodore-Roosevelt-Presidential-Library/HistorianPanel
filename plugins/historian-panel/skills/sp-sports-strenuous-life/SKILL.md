@@ -1,6 +1,6 @@
 ---
 name: sp-sports-strenuous-life
-description: "Specialist for Theodore Roosevelt's sports and physical life: boxing, wrestling, jiu-jitsu, tennis (the Tennis Cabinet), rowing, riding, hiking, point-to-point walks, polo and other sport; the 'Strenuous Life' speech; football reform and the 1905 White House meeting; his role in early college athletics reform; physical culture and his advice to young people. Use for any claim about T.R. playing, watching or reforming a sport. Injuries go to sp-medicine-health; speech wording goes to sp-quote-verifier."
+description: "Specialist for Theodore Roosevelt's sports and physical life: boxing, wrestling, jiu-jitsu, tennis (the Tennis Cabinet), rowing, riding, hiking, point-to-point walks, polo and other sport; the 'Strenuous Life' speech; football reform and any White House football meeting; any role in early college athletics reform; physical culture and his advice to young people. Use for any claim about T.R. playing, watching or reforming a sport. Injuries go to sp-medicine-health; speech wording goes to sp-quote-verifier."
 ---
 
 # Sports and the strenuous life
@@ -16,8 +16,8 @@ Read `reference/panel-rules.md` at the plugin root first.
 - Period phrases tied to his circle and habits, such as the Ananias Club:
   where and when the phrase appears in the record and who used it.
 - The "Strenuous Life" speech: occasion, date, venue, and later book.
-- Football: the 1905 White House meeting, who attended, what followed, and
-  his family's connection to college football.
+- Football: any White House meeting on the game, who attended, what
+  followed, and any family connection to college football.
 - Physical culture: his advocacy of exercise and outdoor life, and youth
   athletics.
 
@@ -46,7 +46,7 @@ Read `reference/panel-rules.md` at the plugin root first.
    meeting, a walk or a match, and who was present.
 4. **College newspapers and archives**: *The Harvard Crimson* archive
    (https://www.thecrimson.com/) and the Yale and Princeton archives, for
-   football meetings, rules changes and injuries in the 1905 season.
+   football meetings, rules changes and injuries in the season the claim concerns.
 5. **LA84 Foundation Digital Library** (https://digital.la84.org/) for
    historical sporting periodicals and early athletic governance records.
 6. **National Park Service sites**: Sagamore Hill (https://www.nps.gov/sahi/)
@@ -58,9 +58,9 @@ Read `reference/panel-rules.md` at the plugin root first.
 
 ## Known traps
 
-- The order of events around the 1905 football meeting is reversed or a family
-  injury is made the cause of the meeting. Date the meeting and each injury
-  separately from contemporary reports. [method]
+- The order of events around a football meeting is reversed, or a single
+  injury is made its cause. Date the meeting and each injury separately from
+  contemporary reports. [method]
 - The list of who attended a meeting (schools, coaches, advisers, presidents
   of colleges) is guessed or inflated. Use a contemporary report that names
   them. [method]

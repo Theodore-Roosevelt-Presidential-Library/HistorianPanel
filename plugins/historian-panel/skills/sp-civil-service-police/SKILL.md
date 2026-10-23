@@ -1,9 +1,9 @@
 ---
 name: sp-civil-service-police
-description: "Specialist for Theodore Roosevelt on the U.S. Civil Service Commission, 1889-1895, and the New York City Board of Police Commissioners, 1895-1897: his appointments and fellow commissioners, investigations and reports, the merit system fights, his presidency of the police board, Sunday closing enforcement, midnight rounds with reporters, police reforms, and the board's internal conflicts. Use for any claim about T.R. in Washington before the Navy Department or at New York police headquarters."
+description: "Specialist for Theodore Roosevelt on the U.S. Civil Service Commission and the New York City Board of Police Commissioners, the two posts between ranch life and the Navy Department: his appointments and fellow commissioners, investigations and reports, the merit system fights, his role as president of the police board, Sunday closing enforcement, midnight rounds with reporters, police reforms, and the board's internal conflicts. Use for any claim about T.R. in Washington before the Navy Department or at New York police headquarters."
 ---
 
-# Civil Service Commission and NYC Police Board, 1889-1897
+# Civil Service Commission and NYC Police Board
 
 Read `reference/panel-rules.md` at the plugin root first.
 
@@ -14,7 +14,7 @@ Read `reference/panel-rules.md` at the plugin root first.
 - The Commission's investigations, reports, rules and the growth of the
   classified service while he served.
 - His appointment to the New York City Board of Police Commissioners, his
-  election as its president, and his fellow commissioners.
+  role as its president, and his fellow commissioners.
 - Police board actions: enforcement of the excise laws, personnel and
   discipline reforms, the night inspections, the reporters who went with him,
   and the board's deadlocks.

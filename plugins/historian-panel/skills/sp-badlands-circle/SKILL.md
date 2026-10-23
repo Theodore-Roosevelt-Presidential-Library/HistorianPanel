@@ -1,6 +1,6 @@
 ---
 name: sp-badlands-circle
-description: "Use for claims about who the people of T.R.'s Dakota years were: Bill Sewall and Wilmot Dow, Sylvane and Joe Ferris, Bill Merrifield, the Marquis de Mores and his family, A. T. Packard, neighbors, guides, hunters, foremen, cowboys, the stockmen of the Little Missouri association, and the people he arrested or quarreled with. Takes names, spellings, roles, relationships, origins, later careers and life dates. Events and dates of T.R.'s own Badlands life go to sp-badlands."
+description: "Use for claims about who the people of T.R.'s Dakota years were: Bill Sewall and Wilmot Dow, Sylvane and Joe Ferris, Bill Merrifield, the Marquis de Mores and his family, A. T. Packard, neighbors, guides, hunters, foremen, cowboys, the stockmen of the Little Missouri association, and others in his Dakota circle. Takes names, spellings, roles, relationships, origins, later careers and life dates. Events and dates of T.R.'s own Badlands life go to sp-badlands."
 ---
 
 # The Badlands circle
@@ -10,7 +10,7 @@ Read `reference/panel-rules.md` at the plugin root first.
 ## Scope
 
 - Identity of the people around T.R. in Dakota and nearby Montana Territory,
-  1883 onward: full names, spellings, nicknames, origins and life dates.
+  from his first Badlands visit onward: full names, spellings, nicknames, origins and life dates.
 - Their roles: partner, foreman, guide, hunter, hired hand, neighbor, rival,
   editor, lawman, officer of a stockmen's association.
 - Their relationships to T.R. and to each other, and how those relationships

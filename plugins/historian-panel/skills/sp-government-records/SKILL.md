@@ -70,15 +70,15 @@ Read `reference/panel-rules.md` at the plugin root first.
 
 ## Known traps
 
-- Electoral and popular vote figures are copied correctly while the map
-  description ("carried every state outside the South") is wrong. Check the
-  state-by-state table, including split electoral votes. [ref: G-02]
+- Electoral and popular vote figures are copied correctly while the prose
+  description of which states or regions a candidate carried is wrong. Check
+  the state-by-state table, including split electoral votes. [ref: G-02]
 - "Won with a substantial majority" or similar is used where the source gives a
   plurality, or where the electoral and popular margins differ. Use the
   official tallies and the word they support. [ref: F-13]
-- Diplomatic titles changed over time; a post headed by a minister is called
-  an embassy and its head an ambassador. Check the chiefs-of-mission list for
-  the title in that year. [ref: G-15, E-07]
+- Diplomatic titles changed over time; a post's rank (legation or embassy)
+  and its head's title (minister or ambassador) get applied to the wrong
+  year. Check the chiefs-of-mission list for the title in that year. [ref: G-15, E-07]
 - Officeholders' start dates are moved to fit a narrative (tenure dated from
   the second president they served, not from appointment). Use the official
   list's dates. [ref: G-18, G-19, F-20]

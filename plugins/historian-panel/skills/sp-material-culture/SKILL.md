@@ -1,6 +1,6 @@
 ---
 name: sp-material-culture
-description: "Use for claims about money, prices and technology in T.R.'s era: what things cost, salaries, ranch and land prices, converting old dollars to today's money, and the telephones, telegraphs, automobiles, airplanes, submarines, phonographs, typewriters, cameras, clothing, eyeglasses and firearms of 1858-1919, including when a technology existed and how T.R. used it. Any first-to-use-X claim also goes to sp-superlatives."
+description: "Use for claims about money, prices and technology in T.R.'s era: what things cost, salaries, ranch and land prices, converting old dollars to today's money, and the telephones, telegraphs, automobiles, airplanes, submarines, phonographs, typewriters, cameras, clothing, eyeglasses and firearms of T.R.'s lifetime, including when a technology existed and how T.R. used it. Any first-to-use-X claim also goes to sp-superlatives."
 ---
 
 # Material culture, money and technology

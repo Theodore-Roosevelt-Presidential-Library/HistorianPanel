@@ -1,6 +1,6 @@
 ---
 name: sp-navy-rough-riders
-description: "Specialist for Theodore Roosevelt as Assistant Secretary of the Navy, 1897-1898, and in the Rough Riders (First U.S. Volunteer Cavalry): naval preparedness, the Maine, the cable to Dewey, his resignation, raising the regiment at San Antonio, Tampa, the landing in Cuba, Las Guasimas, Kettle Hill and the San Juan Heights, the siege of Santiago, the round-robin letter, Montauk, his book The Rough Riders, and later honors for the 1898 action. Use for any claim about T.R. at the Navy Department or in the Spanish-American War."
+description: "Specialist for Theodore Roosevelt as Assistant Secretary of the Navy, 1897-1898, and in the Rough Riders (First U.S. Volunteer Cavalry): naval preparedness, the Maine, the cable to Dewey, his resignation, raising and training the regiment, the move to Cuba and the landing, Las Guasimas, Kettle Hill and the San Juan Heights, the siege of Santiago, the round-robin letter, Montauk, his book The Rough Riders, and later honors for the 1898 action. Use for any claim about T.R. at the Navy Department or in the Spanish-American War."
 ---
 
 # Navy Department and the Rough Riders, 1897-1898

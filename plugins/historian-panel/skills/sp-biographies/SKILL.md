@@ -54,17 +54,17 @@ Biographies in scope include, as places to look (all secondary):
    (archive.org), HathiTrust (hathitrust.org) and Project Gutenberg
    (gutenberg.org). Later works: a library copy or a publisher preview. Good
    for what the book says; never treat the narrative as a primary record.
-2. **The biography's own notes and bibliography.** Morris, Dalton, Cooper and
-   Millard cite their sources; follow each note to the letter, diary or
-   newspaper it names. Riis and Thayer have few or no notes.
+2. **The biography's own notes and bibliography.** Where a book gives notes,
+   follow each one to the letter, diary or newspaper it names. Check each
+   book for whether it has notes at all; early lives often do not.
 3. **The primary record the note points to:** the Theodore Roosevelt Papers at
    the Library of Congress (loc.gov, Manuscript Division) and the Theodore
    Roosevelt Center digital library (theodorerooseveltcenter.org), which
    gathers scans from many holders.
 4. **The edited letters:** Elting E. Morison and others, *The Letters of
    Theodore Roosevelt* (Harvard University Press, 1951 onward). Bishop's 1920
-   volume prints letters too, but selectively and sometimes trimmed; prefer
-   Morison or the manuscript.
+   volume prints letters too; check any letter against Morison or the
+   manuscript, since edited collections can trim text.
 5. **Houghton Library, Theodore Roosevelt Collection at Harvard**
    (guides.library.harvard.edu/roosevelt): research guide and finding aids;
    good for locating manuscripts a biographer quotes.
@@ -83,11 +83,15 @@ Biographies in scope include, as places to look (all secondary):
 - A quotation is credited to the wrong biographer, or to a biographer who only
   quoted someone else. Name the person whose words they are and where the
   biographer found them. [method]
-- Early lives (Riis, Thayer) were written by friends and admirers and rarely
-  give sources. Treat their details as testimony, not record. [method]
-- Bishop's letter collection was prepared with T.R.'s cooperation; letters can
-  be excerpted without marking cuts. Check the text against Morison or the
-  manuscript before quoting. [method]
+- Early lives written by contemporaries and admirers may give few sources.
+  Check whether the book cites any; treat uncited details as testimony, not
+  record. [method]
+- Older letter collections can excerpt letters without marking cuts. Check the
+  text against the modern edited letters or the manuscript before quoting.
+  [method]
+- Judge a biography on what its notes and sources support, not on its
+  reputation. Report a scholar's view only from the published work, with
+  edition and page; never write what an author "would" say. [method]
 - A biographer's interpretation ("he was haunted by", "he never forgave") is
   turned into a fact in copy. Report it as that author's reading. [method]
 - Page numbers cited from one edition are applied to another. E-book and

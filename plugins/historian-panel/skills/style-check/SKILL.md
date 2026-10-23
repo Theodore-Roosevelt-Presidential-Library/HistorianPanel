@@ -6,7 +6,9 @@ description: "Check Library copy for house style and terminology that travel wit
 # House style check
 
 Read `reference/panel-rules.md` at the plugin root first. This skill checks
-wording, not facts; facts go through `accuracy-review`.
+wording, not facts; facts go through `accuracy-review`. The table records the
+Library's house wording, not a historical finding; what happened where goes to
+`sp-navy-rough-riders`.
 
 ## What it checks
 

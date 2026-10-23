@@ -15,7 +15,7 @@ Read `reference/panel-rules.md` at the plugin root first.
   about the person.
 - How and when each met T.R., and what each relationship was (mentor,
   collaborator, correspondent, appointee, rival) at a given date.
-- Breaks and reconciliations, such as the split with Taft.
+- Breaks and reconciliations between T.R. and members of the circle.
 - Friends' published accounts of T.R., as evidence of the friend's view.
 
 ## Out of scope
@@ -77,8 +77,8 @@ Read `reference/panel-rules.md` at the plugin root first.
   [ref: G-19]
 - "Ambassador" is used for a diplomat who held the rank of minister. Check
   the chief-of-mission record for the rank. [ref: G-15, E-07]
-- Lines attributed to friends and rivals (Hanna on "that cowboy," for
-  example) are quoted as if documented when they come from later memoirs.
+- Lines attributed to friends and rivals are quoted as if documented when
+  they come from later memoirs.
   Send wording to `sp-quote-verifier` and label it as recalled. [ref: D-18,
   F-07, F-11]
 - A relationship is described as constant when it changed: early allies who

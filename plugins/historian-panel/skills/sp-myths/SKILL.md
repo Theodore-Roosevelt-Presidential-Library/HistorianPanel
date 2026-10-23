@@ -9,10 +9,9 @@ Read `reference/panel-rules.md` at the plugin root first.
 
 ## Scope
 
-- Well-known stories about T.R. whose details drift in retelling: the 1902
-  Mississippi bear hunt and the origin of the teddy bear, the Rough Riders'
-  charge, the round-robin letter of 1898, bar-fight and cowboy tales, and
-  family anecdotes.
+- Well-known stories about T.R. whose details drift in retelling: the teddy
+  bear origin story, the Rough Riders' charge, the round-robin letter,
+  bar-fight and cowboy tales, and family anecdotes.
 - Quotes and quips attributed to T.R. or to people about him that have no
   traceable printing.
 - "First", "coined" and "invented" legends.
@@ -71,8 +70,9 @@ Read `reference/panel-rules.md` at the plugin root first.
   "while in office" and "as a former president". [ref: D-11, E-09]
 - A naming honor is inflated: a smaller feature is turned into a famous one.
   Check the official name and what was actually renamed. [ref: D-02, D-04]
-- The charge is placed on "San Juan Hill" in prose. Use Kettle Hill or the San
-  Juan Heights. [house-rule]
+- Place names for the 1898 charge are used loosely. Apply the Library's naming
+  rule in `style-check` in prose, and send the question of what happened
+  where to `sp-navy-rough-riders`. [house-rule]
 - A line found only on posters, quote sites or social media is attributed to
   T.R. No traceable printing means no quotation marks. [method]
 - The Library's own lists, Story Guide and tools are treated as proof that a
