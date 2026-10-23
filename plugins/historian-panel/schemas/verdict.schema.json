@@ -1,0 +1,55 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Theodore-Roosevelt-Presidential-Library/HistorianPanel/schemas/verdict.schema.json",
+  "title": "Verdict",
+  "description": "One specialist's finding on one claim, for one pass.",
+  "type": "object",
+  "required": ["claim_id", "specialist", "pass", "verdict", "sources", "confidence"],
+  "additionalProperties": false,
+  "properties": {
+    "claim_id": {"type": "string"},
+    "specialist": {"type": "string", "description": "Skill name, e.g. sp-quote-verifier."},
+    "pass": {"type": "string", "enum": ["A", "B", "C"]},
+    "verdict": {
+      "type": "string",
+      "enum": ["supported", "contradicted", "partly_supported", "unverifiable", "out_of_scope"],
+      "description": "supported: two independent sources agree with the claim as written. contradicted: sources show it is wrong. partly_supported: core is right but a detail is wrong or overstated. unverifiable: fewer than two independent sources either way. out_of_scope: wrong specialist."
+    },
+    "corrected_text": {
+      "type": ["string", "null"],
+      "description": "For contradicted or partly_supported: the narrowest accurate wording the sources support."
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["citation", "type"],
+        "additionalProperties": false,
+        "properties": {
+          "citation": {"type": "string", "description": "Author, title, date, and the specific record, page or section."},
+          "url": {"type": ["string", "null"]},
+          "locator": {"type": ["string", "null"], "description": "Page, chapter, catalog number, or paragraph."},
+          "type": {"type": "string", "enum": ["primary", "authoritative", "secondary", "lead_only"]},
+          "derives_from": {"type": ["string", "null"], "description": "If this source repeats another (for example a site quoting Wikipedia), name it."},
+          "checked_text": {"type": "boolean", "description": "True only if the wording or figure was read in this source, not inferred from a summary."}
+        }
+      }
+    },
+    "searched_without_result": {
+      "type": "array",
+      "items": {"type": "string"},
+      "description": "Where you looked and found nothing. Required for unverifiable and for negative claims (for example, 'never served in Congress')."
+    },
+    "confidence": {"type": "string", "enum": ["high", "medium", "low"]},
+    "trap_hits": {
+      "type": "array",
+      "items": {"type": "string"},
+      "description": "Ledger refs of known traps this claim matched."
+    },
+    "needs_archive_access": {
+      "type": ["string", "null"],
+      "description": "If only an archive the team cannot reach could settle it: which archive and what to check."
+    },
+    "notes": {"type": "string"}
+  }
+}

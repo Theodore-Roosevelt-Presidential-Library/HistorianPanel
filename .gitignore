@@ -1,0 +1,10 @@
+# Local config points at internal systems; never commit it.
+historian-panel.config.yaml
+# Run output and private material
+historian-panel-out/
+private/
+*.private.yaml
+# Python
+.venv/
+__pycache__/
+*.pyc

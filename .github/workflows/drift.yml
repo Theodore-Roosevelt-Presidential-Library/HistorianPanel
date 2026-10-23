@@ -1,0 +1,27 @@
+name: Weekly drift report
+
+on:
+  schedule:
+    - cron: "43 13 * * 1"   # Mondays, after the regression run
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  report:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements-dev.txt
+      - run: python scripts/drift_report.py > drift.md
+      - name: Open the report as an issue
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh issue create --title "Drift report $(date +%F)" --label drift-report --body-file drift.md || gh issue create --title "Drift report $(date +%F)" --body-file drift.md

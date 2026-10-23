@@ -1,0 +1,33 @@
+# HistorianPanel local configuration
+#
+# Copy this file to `historian-panel.config.yaml` in your working folder (or set
+# HP_CONFIG to its path). The real config is ignored by git: it may point at
+# internal systems, and this repository is public.
+
+# Where run output goes. The coordinator writes ledger.jsonl (one verdict per
+# line) and report.md here. Point this at a clone of the private ledger repo
+# when you have one.
+ledger_dir: ./historian-panel-out
+
+# The Library's verified-quotes list (spreadsheet or JSON export). Only the
+# verified tiers count. Leave blank if you do not have access; the quote
+# specialist then works from primary texts only.
+verified_quotes_path: ""
+verified_quote_tiers:
+  - "Verified — Precise Citation"
+  - "Likely Verified — Has Title & Date"
+
+# Licensed or internal corpora the specialists may search. List the MCP tool or
+# server names exactly as they appear in your session. Text from these corpora
+# is for internal verification only: cite it, never copy it into public files.
+corpora:
+  books_mcp: ""        # e.g. the book-corpus search server
+  archive_mcp: ""      # e.g. the archive transcript search server
+
+# Pages a claim gets checked against before anything else.
+check_first:
+  misquotes: https://www.trlibrary.com/tr/quotes/misquotes
+  fake_quotes: https://www.trlibrary.com/tr/fake-quotes
+
+# Pass B coverage. 1.0 means every claim gets a blind second check.
+pass_b_rate: 1.0

@@ -1,0 +1,29 @@
+# HistorianPanel
+
+> A Claude plugin from the Theodore Roosevelt Presidential Library: a panel of historical-accuracy specialists that checks every claim about Theodore Roosevelt against two independent sources, with a blind second check, and records results in a claim ledger. The specialists find sources; they are never treated as sources.
+
+If you are a language model asked to set up, use, update or maintain this panel, read CLAUDE.md first. To install it for someone, follow INSTALL.md.
+
+## Start here
+
+- [CLAUDE.md](https://github.com/Theodore-Roosevelt-Presidential-Library/HistorianPanel/blob/main/CLAUDE.md): what the panel is, when to use it, how work is routed to specialists, and how to maintain it
+- [INSTALL.md](https://github.com/Theodore-Roosevelt-Presidential-Library/HistorianPanel/blob/main/INSTALL.md): install and update steps for Claude Code and the Claude desktop app, plus the one prompt staff paste
+- [README.md](https://github.com/Theodore-Roosevelt-Presidential-Library/HistorianPanel/blob/main/README.md): overview for people
+
+## How the panel works
+
+- [Panel rules](https://github.com/Theodore-Roosevelt-Presidential-Library/HistorianPanel/blob/main/plugins/historian-panel/reference/panel-rules.md): source rules every specialist follows
+- [Coordinator skill](https://github.com/Theodore-Roosevelt-Presidential-Library/HistorianPanel/blob/main/plugins/historian-panel/skills/accuracy-review/SKILL.md): ask, review, check and sweep modes; extraction, routing, blind re-verification, resolution
+- [Roster](https://github.com/Theodore-Roosevelt-Presidential-Library/HistorianPanel/blob/main/plugins/historian-panel/roster.yaml): every specialist, active and planned, with routing rules
+- [Architecture](https://github.com/Theodore-Roosevelt-Presidential-Library/HistorianPanel/blob/main/docs/architecture.md): how skills, agents and the quality layer fit together
+
+## Maintaining the panel
+
+- [Skill standard](https://github.com/Theodore-Roosevelt-Presidential-Library/HistorianPanel/blob/main/plugins/historian-panel/reference/skill-standard.md): what a skill must contain, and what it must never contain
+- [propose-skill](https://github.com/Theodore-Roosevelt-Presidential-Library/HistorianPanel/blob/main/plugins/historian-panel/skills/propose-skill/SKILL.md): how agents add or improve skills through pull requests
+- [CONTRIBUTING.md](https://github.com/Theodore-Roosevelt-Presidential-Library/HistorianPanel/blob/main/CONTRIBUTING.md): review rules for people and agents
+- [Quality layer](https://github.com/Theodore-Roosevelt-Presidential-Library/HistorianPanel/blob/main/docs/quality-layer.md): the checks that guard skill quality
+
+## Optional
+
+- [Admin setup](https://github.com/Theodore-Roosevelt-Presidential-Library/HistorianPanel/blob/main/docs/admin-setup.md): pushing the panel to every staff member automatically

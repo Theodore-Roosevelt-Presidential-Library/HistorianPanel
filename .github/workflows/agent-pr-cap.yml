@@ -1,0 +1,34 @@
+name: Agent pull request cap
+
+# At most 3 agent-authored pull requests in any 7 days, to keep review real.
+# A pull request counts as agent-authored if it carries the agent-authored
+# label or comes from a branch starting with agent/.
+
+on:
+  pull_request:
+    types: [opened, reopened, labeled, synchronize]
+
+permissions:
+  pull-requests: write
+  issues: write
+
+jobs:
+  cap:
+    if: contains(github.event.pull_request.labels.*.name, 'agent-authored') || startsWith(github.head_ref, 'agent/')
+    runs-on: ubuntu-latest
+    steps:
+      - name: Label and count
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPO: ${{ github.repository }}
+          PR: ${{ github.event.pull_request.number }}
+        run: |
+          gh pr edit "$PR" --repo "$REPO" --add-label agent-authored || true
+          since=$(date -u -d '7 days ago' +%Y-%m-%d)
+          count=$(gh pr list --repo "$REPO" --label agent-authored --state all \
+                    --search "created:>=$since" --json number --jq 'length')
+          echo "agent-authored pull requests since $since: $count"
+          if [ "$count" -gt 3 ]; then
+            gh pr comment "$PR" --repo "$REPO" --body "This is agent-authored pull request number $count in 7 days; the cap is 3. Move it to proposals/backlog.md or wait for older ones to be reviewed."
+            exit 1
+          fi
