@@ -43,7 +43,8 @@ Many specialists overlap, so rank them rather than taking the first matches:
 
 1. **Required seats.** `sp-quote-verifier` for type `quote`, `sp-photo-id` for
    `image_id`, `sp-superlatives` for `superlative`, and
-   `sp-book-citations` for any book title, author or ISBN. Any claim touching
+   `sp-book-citations` for any book title, author or ISBN, and
+   `sp-on-this-day` for any "on this day," anniversary or #OTD claim. Any claim touching
    Indigenous history also gets `sp-northern-plains-indigenous`, which flags it
    for human review.
 2. **Score the rest.** For each other `sp-` specialist, score one point per

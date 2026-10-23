@@ -84,6 +84,8 @@ are the signal to build a planned specialist.
 | "What do the biographers say about X?" | `/historian-panel:accuracy-review ask` (routes to `sp-scholarly-perspectives`) |
 | "How should we frame X?" on a contested subject | `/historian-panel:scholarly-debate <question>` |
 | "Get this ready for a historian to review" | `/historian-panel:scholar-review-packet <piece>` |
+| "Give me a T.R. quote about X" | `/historian-panel:sp-quote-finder <subject and use>` |
+| "Is this OTD post right?" | `/historian-panel:accuracy-review review <draft>` (the OTD specialist takes a required seat) |
 | "Check house style" | `/historian-panel:style-check <text>` |
 | "Set up," "update," "is it working?" | `/historian-panel:panel-setup` |
 | "Add a specialist," "teach the panel," "update the skills" | `/historian-panel:propose-skill <what and why>` |

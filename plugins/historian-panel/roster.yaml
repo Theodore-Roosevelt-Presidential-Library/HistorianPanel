@@ -1043,6 +1043,33 @@ specialists:
     - exercise
     - gymnasium
     - athlete
+- name: sp-on-this-day
+  group: theme
+  status: active
+  title: On This Day
+  blurb: Did it really happen on this date? Anniversary counts, report dates vs event dates, holidays on Sundays,
+    overnight cables.
+  routes:
+    types:
+    - date
+    - number
+    - sequence
+    keywords:
+    - on this day
+    - this day in
+    - years ago today
+    - today in history
+    - anniversary
+    - '#otd'
+    - otd
+    - 150th
+    - 125th
+    - 100th
+    - centennial
+    - birthday
+    - observed
+    - dateline
+    - issue of
 - name: sp-loc-papers
   group: collection
   status: active
@@ -1266,6 +1293,43 @@ specialists:
     - exhibit
     - river of doubt expedition
     - catalog number
+- name: sp-tra
+  group: collection
+  status: active
+  title: Theodore Roosevelt Association
+  blurb: 'The TRA''s day-by-day Chronological Record and its Journal: what an entry says, what it rests on, and
+    how far to trust it.'
+  routes:
+    types:
+    - date
+    - anecdote
+    - other
+    keywords:
+    - theodore roosevelt association
+    - tra journal
+    - chronological record
+    - tra chronology
+    - robert j. moore
+    - roosevelt memorial association
+    - theodoreroosevelt.org
+- name: sp-tr-cyclopedia
+  group: collection
+  status: active
+  title: Theodore Roosevelt Cyclopedia
+  blurb: 'The topical index of T.R.''s words: find what he said on a subject, then trace it to the original speech,
+    letter or book.'
+  routes:
+    types:
+    - quote
+    - other
+    keywords:
+    - cyclopedia
+    - theodore roosevelt cyclopedia
+    - hart and ferleger
+    - ferleger
+    - albert bushnell hart
+    - what did he say about
+    - roosevelt on
 - name: sp-quote-verifier
   group: scholarship
   status: active
@@ -1454,6 +1518,27 @@ specialists:
     - widely regarded
     - interpretation
     - debate
+- name: sp-quote-finder
+  group: scholarship
+  status: active
+  title: Quote finder
+  blurb: '"Give me a T.R. quote about public lands." Only lines found word for word in a primary text or the verified
+    list, with the citation and context.'
+  routes:
+    types:
+    - quote
+    - other
+    keywords:
+    - quote about
+    - a quote on
+    - what did he say
+    - find a quote
+    - better quote
+    - roosevelt quote
+    - tr quote
+    - quotation for
+    - he once said
+    - as roosevelt put it
 - name: sp-gilded-age-new-york
   group: era
   status: active

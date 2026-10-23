@@ -2,7 +2,7 @@
 
 <!-- Generated from plugins/historian-panel/roster.yaml by scripts/build_roster_md.py. Do not edit by hand. -->
 
-HistorianPanel has **69 members**: 69 at work and 0 planned. Each one is a specialist in one slice of Theodore Roosevelt's world. None of them answers from memory. They know *where to look* and *what usually goes wrong*, and they bring back sources.
+HistorianPanel has **73 members**: 73 at work and 0 planned. Each one is a specialist in one slice of Theodore Roosevelt's world. None of them answers from memory. They know *where to look* and *what usually goes wrong*, and they bring back sources.
 
 You don't need to pick a specialist. Ask Claude to check something ("Is this caption right?", "Review this page") and the coordinator sends each claim to the right two or three members. Every claim gets a second, blind check from a different member before it is closed.
 
@@ -76,6 +76,7 @@ Subjects that run through his whole life, plus a few cross-cutting checks.
 | [Hard chapters](plugins/historian-panel/skills/sp-hard-chapters/SKILL.md)<br>`sp-hard-chapters` | Race, Brownsville, empire, immigration and other subjects that need the most care. Flags and gathers sources; people decide. | Active |
 | [Medicine and health](plugins/historian-panel/skills/sp-medicine-health/SKILL.md)<br>`sp-medicine-health` | Asthma, his eye injury, the Amazon fevers, the 1912 bullet, and how family members died. | Active |
 | [Sports and the strenuous life](plugins/historian-panel/skills/sp-sports-strenuous-life/SKILL.md)<br>`sp-sports-strenuous-life` | Boxing, jiu-jitsu, rowing, point-to-point walks, and saving college football. | Active |
+| [On This Day](plugins/historian-panel/skills/sp-on-this-day/SKILL.md)<br>`sp-on-this-day` | Did it really happen on this date? Anniversary counts, report dates vs event dates, holidays on Sundays, overnight cables. | Active |
 
 ## Primary collections and where they live
 
@@ -91,6 +92,8 @@ Archives and libraries. They know how a collection is organized, what is digitiz
 | [Period newspapers](plugins/historian-panel/skills/sp-period-newspapers/SKILL.md)<br>`sp-period-newspapers` | Chronicling America and other archives: dating reports, wire stories, OCR traps. | Active |
 | [T.R.'s texts and editions](plugins/historian-panel/skills/sp-published-works/SKILL.md)<br>`sp-published-works` | Which edition says what: speeches, the Works, the Letters, and scans to read them in. | Active |
 | [Museum specimens and expedition records](plugins/historian-panel/skills/sp-museum-specimens/SKILL.md)<br>`sp-museum-specimens` | Smithsonian, AMNH and other records of what T.R. collected, and where it went. | Active |
+| [Theodore Roosevelt Association](plugins/historian-panel/skills/sp-tra/SKILL.md)<br>`sp-tra` | The TRA's day-by-day Chronological Record and its Journal: what an entry says, what it rests on, and how far to trust it. | Active |
+| [Theodore Roosevelt Cyclopedia](plugins/historian-panel/skills/sp-tr-cyclopedia/SKILL.md)<br>`sp-tr-cyclopedia` | The topical index of T.R.'s words: find what he said on a subject, then trace it to the original speech, letter or book. | Active |
 
 ## Biographies, historiography and quotes
 
@@ -105,6 +108,7 @@ What has been written about T.R., how reliable it is, and how views have changed
 | [Myths and misattributions](plugins/historian-panel/skills/sp-myths/SKILL.md)<br>`sp-myths` | Famous stories and quotes that aren't quite true, or aren't true at all. | Active |
 | [Book citations](plugins/historian-panel/skills/sp-book-citations/SKILL.md)<br>`sp-book-citations` | Titles, authors, publishers, years and ISBNs on reading lists. Does the book even exist? | Active |
 | [What historians wrote](plugins/historian-panel/skills/sp-scholarly-perspectives/SKILL.md)<br>`sp-scholarly-perspectives` | How the major biographers actually treat a subject, with page citations, and where they disagree. Never speaks for them. | Active |
+| [Quote finder](plugins/historian-panel/skills/sp-quote-finder/SKILL.md)<br>`sp-quote-finder` | "Give me a T.R. quote about public lands." Only lines found word for word in a primary text or the verified list, with the citation and context. | Active |
 
 ## Context of the times
 
