@@ -1,0 +1,17 @@
+{
+  "name": "historian-panel",
+  "displayName": "HistorianPanel",
+  "description": "Source-finding specialists for Theodore Roosevelt history. Extracts claims, verifies each against two independent sources, re-verifies blind, and writes results to a claim ledger.",
+  "author": {
+    "name": "Theodore Roosevelt Presidential Library"
+  },
+  "homepage": "https://github.com/Theodore-Roosevelt-Presidential-Library/HistorianPanel",
+  "repository": "https://github.com/Theodore-Roosevelt-Presidential-Library/HistorianPanel",
+  "license": "MIT",
+  "keywords": [
+    "history",
+    "fact-checking",
+    "theodore-roosevelt",
+    "museums"
+  ]
+}

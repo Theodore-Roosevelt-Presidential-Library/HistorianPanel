@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Theodore-Roosevelt-Presidential-Library/HistorianPanel/schemas/claim.schema.json",
+  "title": "Claim",
+  "description": "One atomic, checkable statement taken from a piece of copy.",
+  "type": "object",
+  "required": ["claim_id", "text", "type"],
+  "additionalProperties": false,
+  "properties": {
+    "claim_id": {
+      "type": "string",
+      "description": "Run-local ID such as R-20261023-0001. The ledger assigns permanent IDs."
+    },
+    "text": {
+      "type": "string",
+      "description": "The claim as a single declarative sentence, keeping the original wording where it matters (always for quotes)."
+    },
+    "type": {
+      "type": "string",
+      "enum": ["quote", "date", "number", "name", "place", "office", "life_event", "sequence", "superlative", "image_id", "anecdote", "other"]
+    },
+    "context": {
+      "type": "string",
+      "description": "The sentence or caption the claim came from, verbatim."
+    },
+    "location": {
+      "type": "string",
+      "description": "Where the claim lives: URL plus section, node ID, file path, or image filename."
+    },
+    "risk": {
+      "type": "string",
+      "enum": ["high", "normal"],
+      "description": "High for quotes, superlatives, image IDs, family facts and anything bound for /tr, exhibits, quizzes, press releases or datasets."
+    },
+    "routing": {
+      "type": "array",
+      "items": {"type": "string"},
+      "maxItems": 3,
+      "description": "Specialist skill names chosen by the coordinator."
+    }
+  }
+}

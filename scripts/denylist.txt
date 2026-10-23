@@ -1,0 +1,9 @@
+# Terms that must never appear in this public repository's skills and agents.
+# Generic entries only. Internal hostnames belong in a private list supplied
+# through HP_DENYLIST (a local file) or HP_DENYLIST_TERMS (a CI secret), since
+# listing them here would publish them.
+localhost
+.internal
+.local/
+api_key=
+password=

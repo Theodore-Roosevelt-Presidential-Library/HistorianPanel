@@ -1,0 +1,39 @@
+name: Quality checks
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  checks:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install
+        run: pip install -r requirements-dev.txt
+      - name: Lint skills and agents
+        env:
+          # Private terms (internal hostnames and the like), one per line.
+          HP_DENYLIST_TERMS: ${{ secrets.HP_DENYLIST_TERMS }}
+        run: python scripts/lint_skills.py
+      - name: Provenance of trap references
+        run: python scripts/check_provenance.py
+      - name: Unit tests
+        run: python -m unittest discover -s tests -v
+      - name: Harness plumbing (no API calls)
+        run: python scripts/run_regression.py --runner fake --include-examples
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - name: Validate marketplace and plugin
+        run: |
+          npm install -g @anthropic-ai/claude-code
+          claude plugin validate .
+          claude plugin validate ./plugins/historian-panel

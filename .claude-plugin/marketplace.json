@@ -1,0 +1,17 @@
+{
+  "name": "trpl-historian",
+  "description": "Theodore Roosevelt Presidential Library: historical-accuracy specialists for Claude.",
+  "owner": {
+    "name": "Theodore Roosevelt Presidential Library",
+    "url": "https://www.trlibrary.com"
+  },
+  "plugins": [
+    {
+      "name": "historian-panel",
+      "source": "./plugins/historian-panel",
+      "description": "A panel of source-finding specialists that checks every historical claim against two independent sources, with a blind second check.",
+      "category": "research",
+      "tags": ["history", "fact-checking", "theodore-roosevelt"]
+    }
+  ]
+}

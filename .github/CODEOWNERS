@@ -1,0 +1,6 @@
+# Every change needs a code owner's review. Add a curatorial reviewer for
+# skills once one has a GitHub account.
+*                                   @mbriney
+/plugins/historian-panel/skills/    @mbriney
+/plugins/historian-panel/agents/    @mbriney
+/provenance/                        @mbriney

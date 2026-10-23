@@ -1,0 +1,12 @@
+{
+  "note": "Rolling baseline. Set with run_regression.py --update-baseline after a reviewed run on the private cases. Floors are absolute limits that apply even before a baseline exists.",
+  "tolerance": 0.05,
+  "floors": {
+    "catch_rate": 0.8,
+    "false_alarm_rate": 0.1
+  },
+  "catch_rate": null,
+  "redteam_catch_rate": null,
+  "false_alarm_rate": null,
+  "set_on": null
+}

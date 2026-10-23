@@ -1,0 +1,171 @@
+# HistorianPanel roster
+#
+# Every skill in skills/ must appear here, and every entry marked "active"
+# must have a skill folder. "planned" entries have no folder yet; they are
+# the backlog that propose-skill works from.
+#
+# routes.types     claim types (see schemas/claim.schema.json) the specialist takes
+# routes.keywords  lowercase words or phrases; the coordinator routes a claim to a
+#                  specialist when the claim text matches any of them
+# A claim can go to at most three specialists in Pass A.
+
+version: 1
+
+groups:
+  workflow: Workflow roles that run the review itself
+  period: Periods of T.R.'s life
+  family: Family and circle
+  theme: Themes across his life
+  collection: Primary collections and where they live
+  scholarship: Biographies, historiography and quotes
+  era: Context of the times
+  media: Images, film, maps and objects
+
+specialists:
+
+  # ---------- Workflow ----------
+  - name: accuracy-review
+    group: workflow
+    status: active
+    title: Coordinator (ask, review, check, sweep)
+  - name: claim-extractor
+    group: workflow
+    status: active
+    title: Breaks copy into atomic, checkable claims
+  - name: blind-reverify
+    group: workflow
+    status: active
+    title: Pass B, rechecks a claim from scratch without seeing Pass A
+  - name: source-independence
+    group: workflow
+    status: active
+    title: Checks whether two sources are really one
+  - name: error-sweep
+    group: workflow
+    status: active
+    title: Finds every other place a confirmed error appears
+  - name: propose-skill
+    group: workflow
+    status: active
+    title: Drafts a new or improved skill as a pull request
+  - name: panel-setup
+    group: workflow
+    status: active
+    title: Install, update and health-check the panel
+  - name: style-check
+    group: workflow
+    status: planned
+    title: House style and Story Guide terminology
+
+  # ---------- Phase 1 specialists (active) ----------
+  - name: sp-family-offices
+    group: family
+    status: active
+    title: Offices, ranks, careers and life events of T.R.'s family
+    routes:
+      types: [office, life_event, date, name, number]
+      keywords: [ted jr, kermit, archie, archibald, quentin, ethel, alice, edith, bamie, corinne, elliott, mittie, theodore sr, son, daughter, sister, brother, wife, married, general, colonel, governor, congress, ambassador, minister, promoted]
+  - name: sp-officeholder-sequences
+    group: theme
+    status: active
+    title: Who held an office, in what order, and for how long
+    routes:
+      types: [sequence, office, date]
+      keywords: [before him, after him, succeeded, preceded, predecessor, successor, secretary of, cabinet, term, tenure, elected, election, electoral, inaugurated, resigned, appointed]
+  - name: sp-photo-id
+    group: media
+    status: active
+    title: Who, when and where in images; captions, alt text and credits
+    routes:
+      types: [image_id]
+      keywords: [photo, photograph, portrait, pictured, caption, alt text, image, painting, engraving, print, credit]
+  - name: sp-generations
+    group: family
+    status: active
+    title: Lineage, generations and cousin degrees
+    routes:
+      types: [name, life_event]
+      keywords: [grandson, granddaughter, great-grandson, great-great, descendant, cousin, removed, generation, lineage, ancestor, family tree]
+  - name: sp-superlatives
+    group: theme
+    status: active
+    title: Firsts, onlys, records and "never" claims
+    routes:
+      types: [superlative]
+      keywords: [first, only, youngest, oldest, largest, most, more than any, record, never, unprecedented, coined, invented, last]
+  - name: sp-quote-verifier
+    group: scholarship
+    status: active
+    title: Exact wording, source, date and venue of quotations
+    routes:
+      types: [quote]
+      keywords: [said, wrote, quote, speech, address, letter, remarked, declared, "\""]
+  - name: sp-badlands
+    group: period
+    status: active
+    title: T.R. in Dakota Territory, 1883-1887, and later Badlands visits
+    routes:
+      types: [date, place, life_event, anecdote, name]
+      keywords: [badlands, bad lands, dakota, medora, little missouri, maltese cross, elkhorn, dickinson, mingusville, de mores, sewall, dow, merrifield, ferris, stockmen, ranch, cattle]
+  - name: sp-conservation
+    group: theme
+    status: active
+    title: Public lands, forests, monuments, refuges and their numbers
+    routes:
+      types: [number, superlative, date, office]
+      keywords: [acres, national forest, national monument, antiquities act, bird reservation, refuge, game preserve, national park, reclamation, conservation, forest service, pinchot, pelican island]
+
+  # ---------- Periods of T.R.'s life (planned) ----------
+  - {name: sp-youth, group: period, status: planned, title: "Youth, 1858-1876: health, education, family travel"}
+  - {name: sp-harvard-alice-lee, group: period, status: planned, title: "Harvard and Alice Lee, 1876-1880"}
+  - {name: sp-albany-assembly, group: period, status: planned, title: "Albany Assemblyman and the losses of February 1884"}
+  - {name: sp-return-east, group: period, status: planned, title: "Return east, 1886-1889: mayoral race, Edith, writing"}
+  - {name: sp-civil-service-police, group: period, status: planned, title: "Civil Service Commission and NYC Police Board, 1889-1897"}
+  - {name: sp-navy-rough-riders, group: period, status: planned, title: "Navy Department and the Rough Riders, 1897-1898"}
+  - {name: sp-governor-vp, group: period, status: planned, title: "Governor and Vice President, 1899-1901"}
+  - {name: sp-first-term, group: period, status: planned, title: "First term, 1901-1905"}
+  - {name: sp-second-term, group: period, status: planned, title: "Second term, 1905-1909"}
+  - {name: sp-africa-europe-bull-moose, group: period, status: planned, title: "Africa, Europe and the Bull Moose, 1909-1912"}
+  - {name: sp-last-years, group: period, status: planned, title: "River of Doubt, World War I and death, 1913-1919"}
+
+  # ---------- Family and circle (planned) ----------
+  - {name: sp-edith, group: family, status: planned, title: "Edith Kermit Carow Roosevelt"}
+  - {name: sp-alice-longworth, group: family, status: planned, title: "Alice Roosevelt Longworth"}
+  - {name: sp-badlands-circle, group: family, status: planned, title: "The Badlands circle: partners, foremen, neighbors"}
+  - {name: sp-political-literary-circle, group: family, status: planned, title: "Political and literary circle: Lodge, Taft, Root, Pinchot, Riis and others"}
+
+  # ---------- Themes (planned) ----------
+  - {name: sp-military-naval, group: theme, status: planned, title: "Military and naval history"}
+  - {name: sp-foreign-policy, group: theme, status: planned, title: "Foreign policy and diplomacy"}
+  - {name: sp-domestic-policy, group: theme, status: planned, title: "Domestic policy and executive actions"}
+  - {name: sp-natural-history, group: theme, status: planned, title: "Natural history, hunting and specimens"}
+  - {name: sp-author, group: theme, status: planned, title: "T.R. as author: books, articles, editions"}
+  - {name: sp-hard-chapters, group: theme, status: planned, title: "Race, Indigenous policy and other hard chapters (routes to human reviewers)"}
+
+  # ---------- Primary collections (planned) ----------
+  - {name: sp-loc-papers, group: collection, status: planned, title: "Library of Congress T.R. Papers"}
+  - {name: sp-houghton, group: collection, status: planned, title: "Houghton Library Theodore Roosevelt Collection"}
+  - {name: sp-tr-center, group: collection, status: planned, title: "Theodore Roosevelt Center digital library"}
+  - {name: sp-nps-sites, group: collection, status: planned, title: "National Park Service sites and records"}
+  - {name: sp-government-records, group: collection, status: planned, title: "National Archives, Congressional Record and government documents"}
+  - {name: sp-period-newspapers, group: collection, status: planned, title: "Period newspapers"}
+  - {name: sp-published-works, group: collection, status: planned, title: "T.R.'s published works and speeches: texts and editions"}
+  - {name: sp-museum-specimens, group: collection, status: planned, title: "Smithsonian and AMNH specimens and records"}
+
+  # ---------- Scholarship (planned) ----------
+  - {name: sp-biographies, group: scholarship, status: planned, title: "The major biographies and what each relies on"}
+  - {name: sp-badlands-scholarship, group: scholarship, status: planned, title: "Badlands and North Dakota scholarship"}
+  - {name: sp-historiography, group: scholarship, status: planned, title: "How T.R. scholarship has changed over time"}
+  - {name: sp-myths, group: scholarship, status: planned, title: "Myths, legends and misattributions"}
+
+  # ---------- Era context (planned) ----------
+  - {name: sp-gilded-age-new-york, group: era, status: planned, title: "Gilded Age New York"}
+  - {name: sp-open-range-west, group: era, status: planned, title: "The open-range cattle West"}
+  - {name: sp-northern-plains-indigenous, group: era, status: planned, title: "Northern Plains Indigenous history (flags only; routes to human reviewers)"}
+  - {name: sp-progressive-politics, group: era, status: planned, title: "Progressive Era party politics"}
+  - {name: sp-material-culture, group: era, status: planned, title: "Material culture, money and technology"}
+
+  # ---------- Media (planned) ----------
+  - {name: sp-film-sound-cartoons, group: media, status: planned, title: "Film, sound recordings and cartoons"}
+  - {name: sp-maps-places, group: media, status: planned, title: "Maps and place names"}
+  - {name: sp-objects, group: media, status: planned, title: "Objects and artifacts"}

@@ -1,0 +1,40 @@
+# Format examples for the regression harness. NOT scored and NOT sources.
+#
+# These show the shape of a case. Their labels have not been through the
+# two-source gate, so the harness skips anything marked `status: illustrative`
+# unless run with --include-examples (used by the plumbing test).
+#
+# The scored cases are built from the private claim ledger and loaded through
+# the HP_CASES environment variable. They stay private because they mirror
+# errors found on Library pages.
+
+- id: EX-001
+  status: illustrative
+  claim: Theodore Roosevelt was born in Oyster Bay, New York.
+  type: place
+  expected: contradicted
+- id: EX-002
+  status: illustrative
+  claim: Theodore Roosevelt was born in New York City on October 27, 1858.
+  type: date
+  expected: supported
+- id: EX-003
+  status: illustrative
+  claim: Theodore Roosevelt was the first president to receive the Nobel Peace Prize, awarded for 1906.
+  type: superlative
+  expected: supported
+- id: EX-004
+  status: illustrative
+  claim: Theodore Roosevelt was the youngest person ever elected president.
+  type: superlative
+  expected: contradicted
+- id: EX-005
+  status: illustrative
+  claim: The Rough Riders were officially the First United States Volunteer Cavalry.
+  type: name
+  expected: supported
+- id: EX-006
+  status: illustrative
+  claim: Theodore Roosevelt died at Sagamore Hill on January 6, 1919.
+  type: date
+  expected: supported

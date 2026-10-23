@@ -1,0 +1,89 @@
+name: Regression set
+
+# Scores the panel against claims with known answers. Pull requests get a
+# stratified sample; the weekly run scores everything and records the result.
+#
+# Needs two repository secrets. Without them this workflow skips itself.
+#   ANTHROPIC_API_KEY  key for headless Claude Code
+#   HP_PRIVATE_TOKEN   read-only token for the private ledger repository,
+#                      which holds regression/cases.yaml
+# Logs show aggregate scores only, never case text: this repository is public.
+
+on:
+  pull_request:
+    paths:
+      - "plugins/historian-panel/skills/**"
+      - "plugins/historian-panel/agents/**"
+      - "plugins/historian-panel/reference/**"
+      - "plugins/historian-panel/roster.yaml"
+  schedule:
+    - cron: "17 9 * * 1"   # Mondays, 09:17 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: regression-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  regression:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    env:
+      HAS_SECRETS: ${{ secrets.ANTHROPIC_API_KEY != '' && secrets.HP_PRIVATE_TOKEN != '' }}
+    steps:
+      - name: Skip without secrets
+        if: env.HAS_SECRETS != 'true'
+        run: echo "Regression secrets are not configured; skipping."
+      - uses: actions/checkout@v4
+        if: env.HAS_SECRETS == 'true'
+      - uses: actions/checkout@v4
+        if: env.HAS_SECRETS == 'true'
+        with:
+          repository: Theodore-Roosevelt-Presidential-Library/AccuracyAudit
+          token: ${{ secrets.HP_PRIVATE_TOKEN }}
+          path: private
+          sparse-checkout: regression
+      - uses: actions/setup-python@v5
+        if: env.HAS_SECRETS == 'true'
+        with:
+          python-version: "3.12"
+      - uses: actions/setup-node@v4
+        if: env.HAS_SECRETS == 'true'
+        with:
+          node-version: "20"
+      - name: Install
+        if: env.HAS_SECRETS == 'true'
+        run: |
+          pip install -r requirements-dev.txt
+          npm install -g @anthropic-ai/claude-code
+      - name: Score (pull request sample)
+        if: env.HAS_SECRETS == 'true' && github.event_name == 'pull_request'
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          HP_CASES: private/regression/cases.yaml
+        run: python scripts/run_regression.py --sample 60 --budget-usd 5 | tee scores.txt
+      - name: Score (full set, recorded)
+        if: env.HAS_SECRETS == 'true' && github.event_name != 'pull_request'
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          HP_CASES: private/regression/cases.yaml
+        run: python scripts/run_regression.py --record --budget-usd 5 | tee scores.txt
+      - name: Post scores on the pull request
+        if: always() && env.HAS_SECRETS == 'true' && github.event_name == 'pull_request'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          { echo "### Regression scores (sample)"; echo '```'; cat scores.txt; echo '```'; } > body.md
+          gh pr comment ${{ github.event.pull_request.number }} --body-file body.md
+      - name: Commit recorded scores
+        if: env.HAS_SECRETS == 'true' && github.event_name != 'pull_request'
+        run: |
+          git config user.name "historianpanel-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add results/history
+          git diff --cached --quiet || git commit -m "Record weekly regression scores"
+          git push
