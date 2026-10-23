@@ -178,7 +178,7 @@ plugins/historian-panel/
   schemas/                          claim and verdict JSON schemas
   skills/                           workflow and specialist skills
   agents/                           isolated agent wrappers
-  config.example.yaml               copy to historian-panel.config.yaml
+  config.example.yaml               template; panel-setup writes the real config itself
 provenance/claim-ids.txt            ledger IDs skills may cite (IDs only)
 scripts/                            lint, provenance, regression, red team, drift
 tests/                              unit tests and public example cases

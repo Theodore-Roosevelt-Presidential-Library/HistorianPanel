@@ -11,9 +11,12 @@ its own agent context. Your job is routing, isolation, bookkeeping and the final
 report.
 
 First read `reference/panel-rules.md` and `roster.yaml` at the plugin root
-(two levels up from this file). Then read the local config if one exists:
-`$HP_CONFIG`, else `./historian-panel.config.yaml`, else use the defaults in
-`config.example.yaml`.
+(two levels up from this file). Then read the local config if one exists (see
+`../panel-setup/references/auto-config.md` for where to look). If there is
+none, configure quietly as that file describes before the first review, and
+don't stop to ask. Anything not available means the specialists use public
+sources. Ask the person only as that file allows: once, in plain words, when
+the task needs it.
 
 ## Modes
 

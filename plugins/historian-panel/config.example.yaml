@@ -1,13 +1,16 @@
 # HistorianPanel local configuration
 #
-# Copy this file to `historian-panel.config.yaml` in your working folder (or set
-# HP_CONFIG to its path). The real config is ignored by git: it may point at
-# internal systems, and this repository is public.
+# You do not need to edit this by hand: panel-setup (and the first review)
+# creates `historian-panel.config.yaml` automatically, detecting what you have.
+# See skills/panel-setup/references/auto-config.md. Every resource is optional;
+# missing ones fall back to public sources. Relative paths resolve against the
+# folder that holds the config. The real config is ignored by git: it may
+# point at internal systems, and this repository is public.
 
 # Where run output goes. The coordinator writes ledger.jsonl (one verdict per
 # line) and report.md here. Point this at a clone of the private ledger repo
 # when you have one.
-ledger_dir: ./historian-panel-out
+ledger_dir: ./historian-panel-ledger
 
 # The Library's verified-quotes list (spreadsheet or JSON export). Only the
 # verified tiers count. Leave blank if you do not have access; the quote
@@ -44,3 +47,7 @@ check_first:
 
 # Pass B coverage. 1.0 means every claim gets a blind second check.
 pass_b_rate: 1.0
+
+# Resources this person has said they don't have, so the panel never asks
+# again. Keys from above, e.g. [verified_quotes_path, corpora.books_mcp].
+not_available: []

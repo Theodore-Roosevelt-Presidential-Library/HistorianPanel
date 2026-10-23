@@ -9,7 +9,7 @@ Open Claude (the desktop app or Claude Code) and paste:
 > and walk me through anything I need to click.
 
 Claude will check whether the panel is already installed, install or update it,
-and run a quick test. In the desktop app it will ask you to click through three
+set itself up, and run a quick test. You won't have to configure anything. In the desktop app it will ask you to click through three
 menus; it cannot click them for you.
 
 If your organization already manages it, there is nothing to do: the panel
@@ -86,11 +86,14 @@ wait for the person to confirm each:
 If they do not see **Add marketplace**, their organization manages plugins.
 Suggest they ask IT to follow `docs/admin-setup.md`.
 
-### Step 4. Finish with the health check
+### Step 4. Configure and check, without questions
 
-Run `historian-panel:panel-setup` and follow its health check (section 4). Report
-the results in a few lines, and tell the person the three things they can now
-ask for: check copy, answer a history question, and find where an error repeats.
+Run `historian-panel:panel-setup` section 4. It configures itself from whatever
+this person has. Most staff won't have the book corpus, self-hosted search
+servers, the Library's working folder or a claude.ai project, and that's fine:
+the panel uses public sources. Don't ask them technical questions. Report in
+one or two plain sentences, then tell them the three things they can now ask
+for: check copy, answer a history question, and find where an error repeats.
 
 ## Updating
 
