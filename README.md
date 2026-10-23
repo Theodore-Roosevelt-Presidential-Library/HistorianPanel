@@ -50,16 +50,15 @@ and nothing an AI writes counts as a source. The rules are in
 
 ## The panel
 
-**Phase 1, active now:** family offices and careers, officeholder sequences,
-photo identification, generations and lineage, superlatives, quotations, the
-Badlands years, and conservation and public lands. Plus the workflow roles:
-coordinator, claim extractor, blind re-verifier, source-independence auditor,
-error sweeper, skill proposer and setup.
+69 members, all active. [ROSTER.md](ROSTER.md) introduces each one.
 
-**Planned:** about 40 more, covering every period of T.R.'s life, his family and
-circle, the major collections, the biographies and how scholarship has changed,
-the context of his era, and images, film, maps and objects. See
-[roster.yaml](plugins/historian-panel/roster.yaml).
+- **Periods of T.R.'s life**, from his 1858 birth to his death in 1919.
+- **Family and circle**: Edith, Alice, the children, the Badlands partners, friends and rivals.
+- **Themes**: conservation, military, foreign and domestic policy, natural history, health, sports, and the hard chapters.
+- **Collections**: the Library of Congress, Houghton, the TR Center, NPS, government records, newspapers, T.R.'s texts, museum specimens.
+- **Scholarship**: the biographies, Badlands scholarship, how views have changed, myths, book citations, and what historians actually wrote.
+- **Era and media**: Gilded Age New York, the open range, Progressive politics, everyday life; photographs, film, maps, objects, sites, namesakes, commemoration and the press.
+- **Workflow roles**: the coordinator, the blind re-checker, the source auditor, the error sweeper, house style, **scholarly lenses**, **scholarly debates** between documented positions from different eras, and **review packets** for real historians.
 
 ## Keeping it good
 

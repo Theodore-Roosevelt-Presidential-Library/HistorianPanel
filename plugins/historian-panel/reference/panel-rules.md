@@ -90,3 +90,13 @@ Return JSON that matches `schemas/verdict.schema.json`, one object per claim,
 inside a single fenced `json` block, and nothing after it. Keep the
 `corrected_text` to the narrowest accurate wording the sources support, in plain
 language.
+
+`trap_hits` lists ledger IDs only (for example `"E-14"`). Put method cautions
+you applied in `notes`, not in `trap_hits`.
+
+## 12. Scholars are cited, never impersonated
+
+Report what a historian wrote only from their published work, with edition and
+page. Never write what a scholar "would say," never speak in a scholar's voice,
+and never characterize a living scholar's views beyond what they published.
+Lenses and debates use question sets and documented positions, not people.

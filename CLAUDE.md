@@ -40,6 +40,18 @@ else's.
 You do not need the person to name the panel. "Is this right?", "check this
 caption," "write a post about the Elkhorn Ranch" are all reasons to run it.
 
+## Who is on the panel
+
+`ROSTER.md` introduces every member in plain language. It is generated from
+`roster.yaml`; after changing the roster, run `python scripts/build_roster_md.py`.
+
+## Lenses and debates never impersonate scholars
+
+`review-lenses` applies question sets from schools of scholarship, and
+`scholarly-debate` argues documented positions from cited published work.
+Neither ever speaks as, or for, a real historian. What a scholar actually wrote
+comes from `sp-scholarly-perspectives`, with edition and page.
+
 ## How the work flows to the right agents
 
 1. **Trigger.** A request matches the `accuracy-review` description (above), or
@@ -68,6 +80,11 @@ are the signal to build a planned specialist.
 | "Check this," "is this accurate," "review this page" | `/historian-panel:accuracy-review review <text or URL>` |
 | "When did T.R. ...?", any one question | `/historian-panel:accuracy-review ask <question>` |
 | "Where else does this error appear?" | `/historian-panel:error-sweep <wrong> -> <right>` |
+| "How would scholars see this?" "Is this framed fairly?" | `/historian-panel:review-lenses <text or URL>` |
+| "What do the biographers say about X?" | `/historian-panel:accuracy-review ask` (routes to `sp-scholarly-perspectives`) |
+| "How should we frame X?" on a contested subject | `/historian-panel:scholarly-debate <question>` |
+| "Get this ready for a historian to review" | `/historian-panel:scholar-review-packet <piece>` |
+| "Check house style" | `/historian-panel:style-check <text>` |
 | "Set up," "update," "is it working?" | `/historian-panel:panel-setup` |
 | "Add a specialist," "teach the panel," "update the skills" | `/historian-panel:propose-skill <what and why>` |
 
@@ -134,6 +151,7 @@ source .venv/bin/activate
 pip install -r requirements-dev.txt
 python scripts/lint_skills.py
 python scripts/check_provenance.py
+python scripts/build_roster_md.py --check
 python -m unittest discover -s tests
 claude plugin validate .
 ```
@@ -159,5 +177,6 @@ scripts/                            lint, provenance, regression, red team, drif
 tests/                              unit tests and public example cases
 docs/                               architecture, admin setup, quality layer
 INSTALL.md                          what staff (and Claude) follow to install
+ROSTER.md                           friendly guide to every panel member (generated)
 llms.txt                            index of this repository for language models
 ```

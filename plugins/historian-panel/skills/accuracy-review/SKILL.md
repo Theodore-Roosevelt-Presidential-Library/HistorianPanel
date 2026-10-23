@@ -38,18 +38,32 @@ type `other` with the question as its text. For `check`, read the file.
 
 ### 2. Route
 
-For each claim, pick up to three **active** specialists from `roster.yaml`:
+For each claim, pick up to three **active** specialists from `roster.yaml`.
+Many specialists overlap, so rank them rather than taking the first matches:
 
-1. Every specialist whose `routes.types` includes the claim type.
-2. Narrow by `routes.keywords` matched against the claim text and context
-   (case-insensitive).
-3. Always add `sp-quote-verifier` for type `quote`, `sp-photo-id` for
-   `image_id`, and `sp-superlatives` for `superlative`.
-4. If nothing matches, use the closest active specialist and add the claim to a
+1. **Required seats.** `sp-quote-verifier` for type `quote`, `sp-photo-id` for
+   `image_id`, `sp-superlatives` for `superlative`, and
+   `sp-book-citations` for any book title, author or ISBN. Any claim touching
+   Indigenous history also gets `sp-northern-plains-indigenous`, which flags it
+   for human review.
+2. **Score the rest.** For each other `sp-` specialist, score one point per
+   `routes.keywords` entry found in the claim text or context
+   (case-insensitive, whole words or phrases), plus two points if the claim's
+   type is in its `routes.types`.
+3. **Prefer subject over method.** On a tie, choose a period, family or theme
+   specialist (the subject expert) over a collection or scholarship specialist
+   (where the evidence lives). A collection specialist earns a seat when the
+   claim names its collection or the best evidence clearly lives there.
+4. **Calendar math.** If the claim states an age, a span, "years later," or a
+   day of the week, give `sp-chronology-calendar` a seat unless three required
+   seats are already taken.
+5. Fill to three seats in score order. Keep at least two different
+   specialists per claim, so Pass B can use a different one than Pass A.
+6. If nothing scores, use the closest active specialist and add the claim to a
    "roster gaps" list in your report. A gap that repeats across runs is a
    reason to run `propose-skill`.
 
-Record the routing on each claim.
+Record the routing, with scores, on each claim.
 
 ### 3. Pass A
 

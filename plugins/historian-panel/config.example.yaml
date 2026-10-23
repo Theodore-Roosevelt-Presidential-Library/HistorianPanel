@@ -24,6 +24,12 @@ corpora:
   books_mcp: ""        # e.g. the book-corpus search server
   archive_mcp: ""      # e.g. the archive transcript search server
 
+# Index of the book corpus by author: title, year, genre, and which
+# specialists' subjects each book covers most. Built locally from the corpus
+# (trpl-rag/hp_author_index/build.py). Used by sp-biographies,
+# sp-scholarly-perspectives and scholarly-debate to pick whose work to read.
+author_index_path: ""
+
 # Pages a claim gets checked against before anything else.
 check_first:
   misquotes: https://www.trlibrary.com/tr/quotes/misquotes

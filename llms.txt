@@ -12,6 +12,8 @@ If you are a language model asked to set up, use, update or maintain this panel,
 
 ## How the panel works
 
+- [ROSTER.md](https://github.com/Theodore-Roosevelt-Presidential-Library/HistorianPanel/blob/main/ROSTER.md): every panel member in plain language, with what to ask each
+
 - [Panel rules](https://github.com/Theodore-Roosevelt-Presidential-Library/HistorianPanel/blob/main/plugins/historian-panel/reference/panel-rules.md): source rules every specialist follows
 - [Coordinator skill](https://github.com/Theodore-Roosevelt-Presidential-Library/HistorianPanel/blob/main/plugins/historian-panel/skills/accuracy-review/SKILL.md): ask, review, check and sweep modes; extraction, routing, blind re-verification, resolution
 - [Roster](https://github.com/Theodore-Roosevelt-Presidential-Library/HistorianPanel/blob/main/plugins/historian-panel/roster.yaml): every specialist, active and planned, with routing rules

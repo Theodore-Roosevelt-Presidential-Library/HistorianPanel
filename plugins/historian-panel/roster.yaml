@@ -1,16 +1,16 @@
 # HistorianPanel roster
 #
 # Every skill in skills/ must appear here, and every entry marked "active"
-# must have a skill folder. "planned" entries have no folder yet; they are
-# the backlog that propose-skill works from.
+# must have a skill folder. "planned" entries are the backlog for propose-skill.
 #
-# routes.types     claim types (see schemas/claim.schema.json) the specialist takes
-# routes.keywords  lowercase words or phrases; the coordinator routes a claim to a
-#                  specialist when the claim text matches any of them
-# A claim can go to at most three specialists in Pass A.
+# title    short name shown in ROSTER.md
+# blurb    plain-language "ask them about" line for ROSTER.md
+# routes.types     claim types (schemas/claim.schema.json) the specialist takes
+# routes.keywords  lowercase words or phrases that signal the specialist
+#
+# After editing, run: python scripts/build_roster_md.py
 
-version: 1
-
+version: 2
 groups:
   workflow: Workflow roles that run the review itself
   period: Periods of T.R.'s life
@@ -20,152 +20,1817 @@ groups:
   scholarship: Biographies, historiography and quotes
   era: Context of the times
   media: Images, film, maps and objects
-
 specialists:
-
-  # ---------- Workflow ----------
-  - name: accuracy-review
-    group: workflow
-    status: active
-    title: Coordinator (ask, review, check, sweep)
-  - name: claim-extractor
-    group: workflow
-    status: active
-    title: Breaks copy into atomic, checkable claims
-  - name: blind-reverify
-    group: workflow
-    status: active
-    title: Pass B, rechecks a claim from scratch without seeing Pass A
-  - name: source-independence
-    group: workflow
-    status: active
-    title: Checks whether two sources are really one
-  - name: error-sweep
-    group: workflow
-    status: active
-    title: Finds every other place a confirmed error appears
-  - name: propose-skill
-    group: workflow
-    status: active
-    title: Drafts a new or improved skill as a pull request
-  - name: panel-setup
-    group: workflow
-    status: active
-    title: Install, update and health-check the panel
-  - name: style-check
-    group: workflow
-    status: planned
-    title: House style and Story Guide terminology
-
-  # ---------- Phase 1 specialists (active) ----------
-  - name: sp-family-offices
-    group: family
-    status: active
-    title: Offices, ranks, careers and life events of T.R.'s family
-    routes:
-      types: [office, life_event, date, name, number]
-      keywords: [ted jr, kermit, archie, archibald, quentin, ethel, alice, edith, bamie, corinne, elliott, mittie, theodore sr, son, daughter, sister, brother, wife, married, general, colonel, governor, congress, ambassador, minister, promoted]
-  - name: sp-officeholder-sequences
-    group: theme
-    status: active
-    title: Who held an office, in what order, and for how long
-    routes:
-      types: [sequence, office, date]
-      keywords: [before him, after him, succeeded, preceded, predecessor, successor, secretary of, cabinet, term, tenure, elected, election, electoral, inaugurated, resigned, appointed]
-  - name: sp-photo-id
-    group: media
-    status: active
-    title: Who, when and where in images; captions, alt text and credits
-    routes:
-      types: [image_id]
-      keywords: [photo, photograph, portrait, pictured, caption, alt text, image, painting, engraving, print, credit]
-  - name: sp-generations
-    group: family
-    status: active
-    title: Lineage, generations and cousin degrees
-    routes:
-      types: [name, life_event]
-      keywords: [grandson, granddaughter, great-grandson, great-great, descendant, cousin, removed, generation, lineage, ancestor, family tree]
-  - name: sp-superlatives
-    group: theme
-    status: active
-    title: Firsts, onlys, records and "never" claims
-    routes:
-      types: [superlative]
-      keywords: [first, only, youngest, oldest, largest, most, more than any, record, never, unprecedented, coined, invented, last]
-  - name: sp-quote-verifier
-    group: scholarship
-    status: active
-    title: Exact wording, source, date and venue of quotations
-    routes:
-      types: [quote]
-      keywords: [said, wrote, quote, speech, address, letter, remarked, declared, "\""]
-  - name: sp-badlands
-    group: period
-    status: active
-    title: T.R. in Dakota Territory, 1883-1887, and later Badlands visits
-    routes:
-      types: [date, place, life_event, anecdote, name]
-      keywords: [badlands, bad lands, dakota, medora, little missouri, maltese cross, elkhorn, dickinson, mingusville, de mores, sewall, dow, merrifield, ferris, stockmen, ranch, cattle]
-  - name: sp-conservation
-    group: theme
-    status: active
-    title: Public lands, forests, monuments, refuges and their numbers
-    routes:
-      types: [number, superlative, date, office]
-      keywords: [acres, national forest, national monument, antiquities act, bird reservation, refuge, game preserve, national park, reclamation, conservation, forest service, pinchot, pelican island]
-
-  # ---------- Periods of T.R.'s life (planned) ----------
-  - {name: sp-youth, group: period, status: planned, title: "Youth, 1858-1876: health, education, family travel"}
-  - {name: sp-harvard-alice-lee, group: period, status: planned, title: "Harvard and Alice Lee, 1876-1880"}
-  - {name: sp-albany-assembly, group: period, status: planned, title: "Albany Assemblyman and the losses of February 1884"}
-  - {name: sp-return-east, group: period, status: planned, title: "Return east, 1886-1889: mayoral race, Edith, writing"}
-  - {name: sp-civil-service-police, group: period, status: planned, title: "Civil Service Commission and NYC Police Board, 1889-1897"}
-  - {name: sp-navy-rough-riders, group: period, status: planned, title: "Navy Department and the Rough Riders, 1897-1898"}
-  - {name: sp-governor-vp, group: period, status: planned, title: "Governor and Vice President, 1899-1901"}
-  - {name: sp-first-term, group: period, status: planned, title: "First term, 1901-1905"}
-  - {name: sp-second-term, group: period, status: planned, title: "Second term, 1905-1909"}
-  - {name: sp-africa-europe-bull-moose, group: period, status: planned, title: "Africa, Europe and the Bull Moose, 1909-1912"}
-  - {name: sp-last-years, group: period, status: planned, title: "River of Doubt, World War I and death, 1913-1919"}
-
-  # ---------- Family and circle (planned) ----------
-  - {name: sp-edith, group: family, status: planned, title: "Edith Kermit Carow Roosevelt"}
-  - {name: sp-alice-longworth, group: family, status: planned, title: "Alice Roosevelt Longworth"}
-  - {name: sp-badlands-circle, group: family, status: planned, title: "The Badlands circle: partners, foremen, neighbors"}
-  - {name: sp-political-literary-circle, group: family, status: planned, title: "Political and literary circle: Lodge, Taft, Root, Pinchot, Riis and others"}
-
-  # ---------- Themes (planned) ----------
-  - {name: sp-military-naval, group: theme, status: planned, title: "Military and naval history"}
-  - {name: sp-foreign-policy, group: theme, status: planned, title: "Foreign policy and diplomacy"}
-  - {name: sp-domestic-policy, group: theme, status: planned, title: "Domestic policy and executive actions"}
-  - {name: sp-natural-history, group: theme, status: planned, title: "Natural history, hunting and specimens"}
-  - {name: sp-author, group: theme, status: planned, title: "T.R. as author: books, articles, editions"}
-  - {name: sp-hard-chapters, group: theme, status: planned, title: "Race, Indigenous policy and other hard chapters (routes to human reviewers)"}
-
-  # ---------- Primary collections (planned) ----------
-  - {name: sp-loc-papers, group: collection, status: planned, title: "Library of Congress T.R. Papers"}
-  - {name: sp-houghton, group: collection, status: planned, title: "Houghton Library Theodore Roosevelt Collection"}
-  - {name: sp-tr-center, group: collection, status: planned, title: "Theodore Roosevelt Center digital library"}
-  - {name: sp-nps-sites, group: collection, status: planned, title: "National Park Service sites and records"}
-  - {name: sp-government-records, group: collection, status: planned, title: "National Archives, Congressional Record and government documents"}
-  - {name: sp-period-newspapers, group: collection, status: planned, title: "Period newspapers"}
-  - {name: sp-published-works, group: collection, status: planned, title: "T.R.'s published works and speeches: texts and editions"}
-  - {name: sp-museum-specimens, group: collection, status: planned, title: "Smithsonian and AMNH specimens and records"}
-
-  # ---------- Scholarship (planned) ----------
-  - {name: sp-biographies, group: scholarship, status: planned, title: "The major biographies and what each relies on"}
-  - {name: sp-badlands-scholarship, group: scholarship, status: planned, title: "Badlands and North Dakota scholarship"}
-  - {name: sp-historiography, group: scholarship, status: planned, title: "How T.R. scholarship has changed over time"}
-  - {name: sp-myths, group: scholarship, status: planned, title: "Myths, legends and misattributions"}
-
-  # ---------- Era context (planned) ----------
-  - {name: sp-gilded-age-new-york, group: era, status: planned, title: "Gilded Age New York"}
-  - {name: sp-open-range-west, group: era, status: planned, title: "The open-range cattle West"}
-  - {name: sp-northern-plains-indigenous, group: era, status: planned, title: "Northern Plains Indigenous history (flags only; routes to human reviewers)"}
-  - {name: sp-progressive-politics, group: era, status: planned, title: "Progressive Era party politics"}
-  - {name: sp-material-culture, group: era, status: planned, title: "Material culture, money and technology"}
-
-  # ---------- Media (planned) ----------
-  - {name: sp-film-sound-cartoons, group: media, status: planned, title: "Film, sound recordings and cartoons"}
-  - {name: sp-maps-places, group: media, status: planned, title: "Maps and place names"}
-  - {name: sp-objects, group: media, status: planned, title: "Objects and artifacts"}
+- name: accuracy-review
+  group: workflow
+  status: active
+  title: Coordinator
+  blurb: Run a full check on a draft, a page or one question. Sends each claim to the right specialists and gives
+    you keep, fix, hedge or cut.
+- name: claim-extractor
+  group: workflow
+  status: active
+  title: Claim extractor
+  blurb: Breaks a page into every date, name, quote, number and photo ID a reader could check.
+- name: blind-reverify
+  group: workflow
+  status: active
+  title: Blind re-verifier
+  blurb: Checks each claim again from scratch without seeing the first answer, so one mistake can't confirm itself.
+- name: source-independence
+  group: workflow
+  status: active
+  title: Source auditor
+  blurb: Spots when two "sources" are really one site copying another, or something that doesn't count at all.
+- name: error-sweep
+  group: workflow
+  status: active
+  title: Error sweeper
+  blurb: 'Once an error is confirmed, finds every other place it appears: pages, captions, datasets, social posts.'
+- name: propose-skill
+  group: workflow
+  status: active
+  title: Skill builder
+  blurb: Drafts a new specialist or improves an existing one, as a pull request a person reviews.
+- name: panel-setup
+  group: workflow
+  status: active
+  title: Setup and updates
+  blurb: Installs the panel, updates it, and runs a quick health check.
+- name: style-check
+  group: workflow
+  status: active
+  title: House style checker
+  blurb: Kettle Hill not San Juan Hill, buttes not mesas, T.R. not Teddy, participants, Trustees, Benefactors.
+- name: review-lenses
+  group: workflow
+  status: active
+  title: Scholarly lenses
+  blurb: Reads a piece the way a biographer, documentary editor, political, critical, regional, military or natural
+    historian would, to catch omissions and framing a fact-check misses.
+- name: scholar-review-packet
+  group: workflow
+  status: active
+  title: Scholar review packet
+  blurb: Prepares a 20-minute packet so a real historian can review a high-stakes piece and make the calls that
+    need a person.
+- name: scholarly-debate
+  group: workflow
+  status: active
+  title: Scholarly debate
+  blurb: Puts the documented positions of different eras of scholarship in a cited debate, then maps where they
+    really disagree and suggests even-handed framing.
+- name: sp-youth
+  group: period
+  status: active
+  title: Youth, 1858-1876
+  blurb: Birth and childhood in New York, asthma, family travels abroad, the boy naturalist.
+  routes:
+    types:
+    - date
+    - place
+    - life_event
+    - name
+    - anecdote
+    - number
+    keywords:
+    - childhood
+    - boyhood
+    - born
+    - birthplace
+    - '1858'
+    - east 20th street
+    - asthma
+    - tutor
+    - home schooling
+    - dresden
+    - grand tour
+    - '1869'
+    - '1872'
+    - boyhood diary
+    - taxidermy
+    - natural history museum
+    - specimens
+    - mittie
+    - theodore sr
+    - harvard entrance
+- name: sp-harvard-alice-lee
+  group: period
+  status: active
+  title: Harvard and Alice Lee, 1876-1880
+  blurb: College, his father's death, courting and marrying Alice Hathaway Lee, his first book.
+  routes:
+    types:
+    - date
+    - life_event
+    - name
+    - place
+    - number
+    - other
+    keywords:
+    - harvard
+    - porcellian
+    - phi beta kappa
+    - class of 1880
+    - alice hathaway lee
+    - alice lee
+    - chestnut hill
+    - saltonstall
+    - engagement
+    - wedding
+    - father's death
+    - theodore sr
+    - columbia law
+    - law school
+    - naval war of 1812
+    - first book
+    - lodge
+- name: sp-albany-assembly
+  group: period
+  status: active
+  title: Albany Assemblyman, 1882-1884
+  blurb: The New York Assembly years, reform fights, and the double loss of February 14, 1884.
+  routes:
+    types:
+    - date
+    - office
+    - life_event
+    - sequence
+    - name
+    - number
+    keywords:
+    - assembly
+    - assemblyman
+    - albany
+    - legislature
+    - state legislature
+    - 21st district
+    - reform
+    - investigation
+    - speaker
+    - bill
+    - february 14
+    - '1884'
+    - mother and wife
+    - mittie
+    - death of alice
+    - baby alice
+    - 1884 convention
+    - republican national convention
+    - blaine
+    - delegate
+- name: sp-badlands
+  group: period
+  status: active
+  title: The Badlands years
+  blurb: 'T.R. in Dakota: the Maltese Cross and Elkhorn ranches, Medora, the cattle business, later visits.'
+  routes:
+    types:
+    - date
+    - place
+    - life_event
+    - anecdote
+    - name
+    keywords:
+    - badlands
+    - bad lands
+    - dakota
+    - medora
+    - little missouri
+    - maltese cross
+    - elkhorn
+    - dickinson
+    - mingusville
+    - de mores
+    - sewall
+    - dow
+    - merrifield
+    - ferris
+    - stockmen
+    - ranch
+    - cattle
+- name: sp-return-east
+  group: period
+  status: active
+  title: Return east, 1886-1889
+  blurb: The 1886 mayoral race, marrying Edith in London, building the Sagamore Hill household.
+  routes:
+    types:
+    - date
+    - life_event
+    - place
+    - name
+    - number
+    - office
+    keywords:
+    - mayoral race
+    - mayor of new york
+    - 1886 election
+    - hewitt
+    - henry george
+    - edith
+    - edith kermit carow
+    - london
+    - st george's
+    - hanover square
+    - honeymoon
+    - sagamore hill
+    - oyster bay
+    - ted jr born
+    - kermit born
+    - '1887'
+    - '1888'
+    - '1889'
+    - books
+    - biography
+- name: sp-civil-service-police
+  group: period
+  status: active
+  title: Civil Service and Police, 1889-1897
+  blurb: The U.S. Civil Service Commission and the New York City Police Board.
+  routes:
+    types:
+    - office
+    - date
+    - sequence
+    - number
+    - anecdote
+    - name
+    keywords:
+    - civil service commission
+    - civil service
+    - commissioner
+    - merit system
+    - spoils
+    - harrison
+    - cleveland
+    - police commissioner
+    - police board
+    - board of police commissioners
+    - mulberry street
+    - sunday closing
+    - excise law
+    - saloons
+    - midnight rambles
+    - night patrol
+    - riis
+    - steffens
+    - nypd
+- name: sp-navy-rough-riders
+  group: period
+  status: active
+  title: Navy and the Rough Riders, 1897-1898
+  blurb: Assistant Secretary of the Navy, the First U.S. Volunteer Cavalry, Kettle Hill and the San Juan Heights.
+  routes:
+    types:
+    - office
+    - date
+    - number
+    - place
+    - sequence
+    - anecdote
+    - name
+    keywords:
+    - assistant secretary of the navy
+    - navy department
+    - maine
+    - dewey
+    - cable
+    - rough riders
+    - first u.s. volunteer cavalry
+    - leonard wood
+    - san antonio
+    - tampa
+    - daiquiri
+    - las guasimas
+    - kettle hill
+    - san juan heights
+    - san juan hill
+    - santiago
+    - round robin
+    - montauk
+    - crowded hour
+    - medal of honor
+- name: sp-governor-vp
+  group: period
+  status: active
+  title: Governor and Vice President, 1899-1901
+  blurb: Albany again, the 1900 ticket, the McKinley assassination and the oath in Buffalo.
+  routes:
+    types:
+    - date
+    - office
+    - sequence
+    - place
+    - life_event
+    - anecdote
+    - name
+    keywords:
+    - governor of new york
+    - albany
+    - platt
+    - machine
+    - franchise tax
+    - 1898 election
+    - vice president
+    - vice-president
+    - 1900 convention
+    - philadelphia convention
+    - hanna
+    - mckinley
+    - assassination
+    - pan-american exposition
+    - czolgosz
+    - buffalo
+    - wilcox house
+    - oath of office
+    - adirondacks
+    - mount marcy
+- name: sp-first-term
+  group: period
+  status: active
+  title: First term, 1901-1905
+  blurb: Northern Securities, the coal strike, Panama, the 1904 election.
+  routes:
+    types:
+    - date
+    - sequence
+    - office
+    - number
+    - life_event
+    - name
+    keywords:
+    - northern securities
+    - antitrust
+    - trust-busting
+    - sherman act
+    - coal strike
+    - anthracite
+    - mitchell
+    - arbitration commission
+    - panama
+    - canal zone
+    - hay-bunau-varilla
+    - hay-herrán
+    - colombia
+    - commerce and labor
+    - 1904 election
+    - alton parker
+    - electoral votes
+    - third term pledge
+    - first term
+- name: sp-second-term
+  group: period
+  status: active
+  title: Second term, 1905-1909
+  blurb: Portsmouth and the Nobel Prize, food and drug laws, Brownsville, the Great White Fleet, the Panic of 1907.
+  routes:
+    types:
+    - date
+    - sequence
+    - number
+    - office
+    - life_event
+    - name
+    keywords:
+    - portsmouth
+    - russo-japanese war
+    - nobel peace prize
+    - nobel lecture
+    - pure food and drug
+    - meat inspection
+    - the jungle
+    - hepburn act
+    - brownsville
+    - great white fleet
+    - world cruise
+    - panic of 1907
+    - taft
+    - 1908 election
+    - second term
+    - successor
+    - straus
+- name: sp-africa-europe-bull-moose
+  group: period
+  status: active
+  title: Africa, Europe and the Bull Moose, 1909-1912
+  blurb: The Smithsonian safari, the European speeches, the New Nationalism, the 1912 campaign and the Milwaukee
+    shooting.
+  routes:
+    types:
+    - date
+    - place
+    - number
+    - sequence
+    - life_event
+    - anecdote
+    keywords:
+    - african expedition
+    - safari
+    - smithsonian
+    - african game trails
+    - specimens
+    - sorbonne
+    - citizenship in a republic
+    - man in the arena
+    - kristiania
+    - christiania
+    - oslo
+    - berlin
+    - oxford
+    - romanes lecture
+    - guildhall
+    - new nationalism
+    - osawatomie
+    - bull moose
+    - progressive party
+    - 1912 election
+    - milwaukee
+    - schrank
+    - shot
+- name: sp-last-years
+  group: period
+  status: active
+  title: Last years, 1913-1919
+  blurb: The Autobiography, the River of Doubt, World War I, Quentin's death, and T.R.'s death at Sagamore Hill.
+  routes:
+    types:
+    - date
+    - place
+    - sequence
+    - number
+    - life_event
+    - anecdote
+    keywords:
+    - river of doubt
+    - rio roosevelt
+    - rondon
+    - brazil
+    - through the brazilian wilderness
+    - amazon
+    - an autobiography
+    - preparedness
+    - world war i
+    - great war
+    - volunteer division
+    - wilson
+    - quentin
+    - chamery
+    - killed in action
+    - sagamore hill
+    - oyster bay
+    - died
+    - death
+    - funeral
+    - youngs cemetery
+- name: sp-family-offices
+  group: family
+  status: active
+  title: Family offices and careers
+  blurb: 'What T.R.''s parents, siblings, wives and children did: offices, ranks, schools, careers, marriages.'
+  routes:
+    types:
+    - office
+    - life_event
+    - date
+    - name
+    - number
+    keywords:
+    - ted jr
+    - kermit
+    - archie
+    - archibald
+    - quentin
+    - ethel
+    - alice
+    - edith
+    - bamie
+    - corinne
+    - elliott
+    - mittie
+    - theodore sr
+    - son
+    - daughter
+    - sister
+    - brother
+    - wife
+    - married
+    - general
+    - colonel
+    - governor
+    - congress
+    - ambassador
+    - minister
+    - promoted
+- name: sp-generations
+  group: family
+  status: active
+  title: Generations and lineage
+  blurb: 'How two Roosevelts are related: great-great-grandsons, fifth cousins once removed, family trees.'
+  routes:
+    types:
+    - name
+    - life_event
+    keywords:
+    - grandson
+    - granddaughter
+    - great-grandson
+    - great-great
+    - descendant
+    - cousin
+    - removed
+    - generation
+    - lineage
+    - ancestor
+    - family tree
+- name: sp-edith
+  group: family
+  status: active
+  title: Edith Roosevelt
+  blurb: Edith Kermit Carow Roosevelt, from childhood friend to First Lady to widow.
+  routes:
+    types:
+    - life_event
+    - date
+    - place
+    - name
+    - anecdote
+    keywords:
+    - edith
+    - carow
+    - edith kermit
+    - first lady
+    - sagamore hill
+    - white house renovation
+    - social secretary
+    - st george's
+    - hanover square
+    - stepmother
+    - widow
+    - widowhood
+    - oyster bay
+    - mrs. roosevelt
+- name: sp-alice-longworth
+  group: family
+  status: active
+  title: Alice Roosevelt Longworth
+  blurb: 'T.R.''s eldest daughter: White House years, the 1905 Asia trip, her wedding, her Washington life.'
+  routes:
+    types:
+    - life_event
+    - date
+    - place
+    - name
+    - anecdote
+    keywords:
+    - alice roosevelt
+    - alice longworth
+    - princess alice
+    - nicholas longworth
+    - crowded hours
+    - taft mission
+    - 1905 asia
+    - white house wedding
+    - debutante
+    - turkey trot
+    - control alice
+    - stepdaughter
+    - bamie
+    - alice lee roosevelt
+    - washington society
+- name: sp-badlands-circle
+  group: family
+  status: active
+  title: The Badlands circle
+  blurb: 'Who T.R.''s Dakota partners, foremen, neighbors and rivals were: Sewall, Dow, Ferris, Merrifield, de Morès.'
+  routes:
+    types:
+    - name
+    - life_event
+    - office
+    - anecdote
+    keywords:
+    - sewall
+    - wilmot dow
+    - dow
+    - sylvane ferris
+    - joe ferris
+    - ferris
+    - merrifield
+    - de mores
+    - marquis
+    - medora von hoffman
+    - packard
+    - foreman
+    - partner
+    - neighbor
+    - guide
+    - stockmen
+    - cowboy
+    - hunter
+    - ranch hand
+- name: sp-political-literary-circle
+  group: family
+  status: active
+  title: Friends, allies and rivals
+  blurb: Lodge, Taft, Root, Hay, Pinchot, Riis, Wister, Burroughs, Muir and the rest of his circle.
+  routes:
+    types:
+    - name
+    - office
+    - life_event
+    - date
+    - anecdote
+    keywords:
+    - lodge
+    - henry cabot lodge
+    - taft
+    - elihu root
+    - root
+    - john hay
+    - hay
+    - pinchot
+    - jacob riis
+    - riis
+    - owen wister
+    - wister
+    - spring rice
+    - burroughs
+    - john muir
+    - muir
+    - hagedorn
+    - mark hanna
+    - leonard wood
+    - jusserand
+    - friend
+    - friendship
+    - rival
+- name: sp-officeholder-sequences
+  group: theme
+  status: active
+  title: Who held what, and when
+  blurb: Before and after, succeeded and preceded, terms of office, election results.
+  routes:
+    types:
+    - sequence
+    - office
+    - date
+    keywords:
+    - before him
+    - after him
+    - succeeded
+    - preceded
+    - predecessor
+    - successor
+    - secretary of
+    - cabinet
+    - term
+    - tenure
+    - elected
+    - election
+    - electoral
+    - inaugurated
+    - resigned
+    - appointed
+- name: sp-superlatives
+  group: theme
+  status: active
+  title: Firsts and onlys
+  blurb: '"First," "only," "youngest," "more than any president" and "never": the claims most likely to be wrong.'
+  routes:
+    types:
+    - superlative
+    keywords:
+    - first
+    - only
+    - youngest
+    - oldest
+    - largest
+    - most
+    - more than any
+    - record
+    - never
+    - unprecedented
+    - coined
+    - invented
+    - last
+- name: sp-chronology-calendar
+  group: theme
+  status: active
+  title: Dates and arithmetic
+  blurb: Ages, spans, "years later," days of the week, holidays on Sundays, renamed cities.
+  routes:
+    types:
+    - date
+    - number
+    - sequence
+    - life_event
+    - place
+    keywords:
+    - age
+    - aged
+    - years old
+    - years later
+    - years after
+    - years before
+    - within
+    - decades
+    - for years
+    - span
+    - day of the week
+    - monday
+    - sunday
+    - holiday
+    - fourth of july
+    - observed
+    - issue date
+    - dateline
+    - renamed
+    - now called
+    - formerly
+- name: sp-conservation
+  group: theme
+  status: active
+  title: Conservation and public lands
+  blurb: Forests, monuments, bird reservations, refuges and parks, and the acreage behind them.
+  routes:
+    types:
+    - number
+    - superlative
+    - date
+    - office
+    keywords:
+    - acres
+    - national forest
+    - national monument
+    - antiquities act
+    - bird reservation
+    - refuge
+    - game preserve
+    - national park
+    - reclamation
+    - conservation
+    - forest service
+    - pinchot
+    - pelican island
+- name: sp-military-naval
+  group: theme
+  status: active
+  title: Military and naval history
+  blurb: Ships, units, ranks, battles, the Great White Fleet, the Medal of Honor.
+  routes:
+    types:
+    - date
+    - number
+    - office
+    - sequence
+    - anecdote
+    - place
+    - name
+    keywords:
+    - navy
+    - naval
+    - assistant secretary of the navy
+    - naval war of 1812
+    - rough riders
+    - volunteer cavalry
+    - kettle hill
+    - san juan
+    - las guasimas
+    - regiment
+    - battleship
+    - great white fleet
+    - dewey
+    - asiatic squadron
+    - manila bay
+    - casualties
+    - medal of honor
+    - volunteer division
+    - national guard
+    - gatling
+- name: sp-foreign-policy
+  group: theme
+  status: active
+  title: Foreign policy
+  blurb: Panama, the Roosevelt Corollary, Portsmouth, Algeciras, treaties, ministers and ambassadors.
+  routes:
+    types:
+    - date
+    - sequence
+    - office
+    - name
+    - number
+    - other
+    keywords:
+    - treaty
+    - diplomacy
+    - diplomat
+    - minister
+    - ambassador
+    - legation
+    - roosevelt corollary
+    - monroe doctrine
+    - venezuela
+    - panama
+    - canal zone
+    - hay-bunau-varilla
+    - santo domingo
+    - portsmouth
+    - russo-japanese
+    - nobel peace prize
+    - algeciras
+    - gentlemen's agreement
+    - root-takahira
+    - taft-katsura
+    - hague
+- name: sp-domestic-policy
+  group: theme
+  status: active
+  title: Domestic policy and executive actions
+  blurb: Trusts, railroads, labor, food and drug laws, executive orders and proclamations.
+  routes:
+    types:
+    - date
+    - number
+    - office
+    - name
+    - sequence
+    - other
+    keywords:
+    - trust
+    - antitrust
+    - northern securities
+    - sherman act
+    - elkins act
+    - hepburn act
+    - interstate commerce
+    - railroad rates
+    - coal strike
+    - anthracite
+    - meat inspection
+    - pure food
+    - food and drug
+    - bureau of corporations
+    - civil service
+    - executive order
+    - proclamation
+    - square deal
+    - message to congress
+    - department of commerce and labor
+- name: sp-natural-history
+  group: theme
+  status: active
+  title: Naturalist and hunter
+  blurb: Specimens, species, bird lists, hunting records, the nature-faker fight.
+  routes:
+    types:
+    - number
+    - name
+    - anecdote
+    - date
+    - place
+    keywords:
+    - naturalist
+    - specimen
+    - specimens
+    - species
+    - subspecies
+    - named after
+    - bird list
+    - birds
+    - hunting
+    - hunter
+    - game
+    - safari
+    - african game trails
+    - smithsonian expedition
+    - museum of natural history
+    - boone and crockett
+    - nature faker
+    - nature fakers
+    - burroughs
+    - teddy bear
+- name: sp-author
+  group: theme
+  status: active
+  title: T.R. the author
+  blurb: 'His books, essays and articles: titles, publishers, years, editions.'
+  routes:
+    types:
+    - name
+    - date
+    - number
+    - other
+    keywords:
+    - book
+    - books
+    - wrote
+    - author
+    - published
+    - publisher
+    - first edition
+    - edition
+    - essay
+    - article
+    - magazine
+    - serialized
+    - scribner
+    - putnam
+    - outlook
+    - works of theodore roosevelt
+    - pen name
+    - bibliography
+    - autobiography
+    - naval war of 1812
+- name: sp-hard-chapters
+  group: theme
+  status: active
+  title: Hard chapters
+  blurb: Race, Brownsville, empire, immigration and other subjects that need the most care. Flags and gathers sources;
+    people decide.
+  routes:
+    types:
+    - anecdote
+    - number
+    - date
+    - quote
+    - other
+    keywords:
+    - race
+    - racial
+    - booker t. washington
+    - brownsville
+    - black soldiers
+    - 25th infantry
+    - without honor
+    - indigenous
+    - native american
+    - indian
+    - tribe
+    - mha nation
+    - immigration
+    - japanese
+    - gentlemen's agreement
+    - chinese exclusion
+    - philippines
+    - imperialism
+    - race suicide
+    - eugenics
+- name: sp-medicine-health
+  group: theme
+  status: active
+  title: Medicine and health
+  blurb: Asthma, his eye injury, the Amazon fevers, the 1912 bullet, and how family members died.
+  routes:
+    types:
+    - life_event
+    - date
+    - anecdote
+    - other
+    keywords:
+    - asthma
+    - sickly
+    - illness
+    - ill
+    - health
+    - eyesight
+    - blind
+    - eye injury
+    - malaria
+    - fever
+    - infection
+    - wound
+    - wounded
+    - bullet
+    - shot
+    - doctor
+    - physician
+    - cause of death
+    - died of
+    - bright's disease
+    - typhoid
+    - embolism
+- name: sp-sports-strenuous-life
+  group: theme
+  status: active
+  title: Sports and the strenuous life
+  blurb: Boxing, jiu-jitsu, rowing, point-to-point walks, and saving college football.
+  routes:
+    types:
+    - anecdote
+    - date
+    - name
+    - life_event
+    - other
+    keywords:
+    - boxing
+    - boxed
+    - wrestling
+    - jiu-jitsu
+    - judo
+    - singlestick
+    - tennis
+    - tennis cabinet
+    - rowing
+    - polo
+    - hiking
+    - point to point
+    - walk
+    - strenuous life
+    - football
+    - ananias club
+    - physical culture
+    - exercise
+    - gymnasium
+    - athlete
+- name: sp-loc-papers
+  group: collection
+  status: active
+  title: Library of Congress papers
+  blurb: 'The T.R. Papers and related family papers: series, reels, digitized items, how to cite.'
+  routes:
+    types:
+    - quote
+    - date
+    - name
+    - anecdote
+    - life_event
+    - other
+    keywords:
+    - library of congress
+    - manuscript division
+    - roosevelt papers
+    - letter to
+    - wrote to
+    - his diary
+    - diary entry
+    - telegram
+    - letterpress
+    - microfilm
+    - loc.gov
+    - morison
+    - kermit and belle
+    - belle roosevelt
+    - archibald roosevelt papers
+    - longworth papers
+- name: sp-houghton
+  group: collection
+  status: active
+  title: Houghton Library, Harvard
+  blurb: 'The Theodore Roosevelt Collection: manuscripts, photographs, printed works.'
+  routes:
+    types:
+    - image_id
+    - name
+    - date
+    - other
+    keywords:
+    - houghton
+    - harvard college library
+    - harvard library
+    - theodore roosevelt collection
+    - hollis
+    - hollis images
+    - ms am
+    - harvard university archives
+    - finding aid
+    - call number
+    - harvard photo
+- name: sp-tr-center
+  group: collection
+  status: active
+  title: Theodore Roosevelt Center
+  blurb: The Dickinson State digital library and encyclopedia, and how its summaries differ from the documents.
+  routes:
+    types:
+    - quote
+    - date
+    - name
+    - anecdote
+    - other
+    keywords:
+    - theodore roosevelt center
+    - tr center
+    - theodorerooseveltcenter.org
+    - dickinson state
+    - digital library
+    - tr encyclopedia
+    - theodore roosevelt encyclopedia
+    - record number
+    - item summary
+    - trc
+    - timeline
+- name: sp-nps-sites
+  group: collection
+  status: active
+  title: National Park Service records
+  blurb: Sagamore Hill, the Birthplace, the Inaugural Site, Theodore Roosevelt National Park, and their histories.
+  routes:
+    types:
+    - place
+    - date
+    - life_event
+    - number
+    - other
+    keywords:
+    - national park service
+    - nps
+    - sagamore hill
+    - birthplace
+    - east 20th street
+    - inaugural site
+    - wilcox house
+    - theodore roosevelt national park
+    - theodore roosevelt island
+    - maltese cross cabin
+    - historic resource study
+    - museum collection
+    - furnishings
+    - park ranger
+    - nps.gov
+- name: sp-government-records
+  group: collection
+  status: active
+  title: Government records
+  blurb: National Archives, the Congressional Record, statutes, FRUS, the American Presidency Project.
+  routes:
+    types:
+    - date
+    - office
+    - number
+    - sequence
+    - other
+    keywords:
+    - executive order
+    - proclamation
+    - statute
+    - act of congress
+    - signed into law
+    - congressional record
+    - message to congress
+    - annual message
+    - electoral votes
+    - electoral college
+    - popular vote
+    - ambassador
+    - minister to
+    - frus
+    - national archives
+    - bioguide
+    - senate confirmed
+    - serial set
+- name: sp-period-newspapers
+  group: collection
+  status: active
+  title: Period newspapers
+  blurb: 'Chronicling America and other archives: dating reports, wire stories, OCR traps.'
+  routes:
+    types:
+    - date
+    - quote
+    - anecdote
+    - other
+    keywords:
+    - newspaper
+    - reported
+    - the press
+    - headline
+    - dispatch
+    - chronicling america
+    - front page
+    - editorial
+    - the outlook
+    - harper's weekly
+    - collier's
+    - new york times
+    - new york tribune
+    - wire
+    - interview
+    - reporter
+- name: sp-published-works
+  group: collection
+  status: active
+  title: T.R.'s texts and editions
+  blurb: 'Which edition says what: speeches, the Works, the Letters, and scans to read them in.'
+  routes:
+    types:
+    - quote
+    - date
+    - name
+    - other
+    keywords:
+    - book
+    - essay
+    - chapter
+    - edition
+    - autobiography
+    - presidential addresses and state papers
+    - works of theodore roosevelt
+    - memorial edition
+    - national edition
+    - letters of theodore roosevelt
+    - african game trails
+    - the strenuous life
+    - new nationalism
+    - gutenberg
+    - hathitrust
+    - internet archive
+    - pamphlet
+    - address at
+- name: sp-museum-specimens
+  group: collection
+  status: active
+  title: Museum specimens and expedition records
+  blurb: Smithsonian, AMNH and other records of what T.R. collected, and where it went.
+  routes:
+    types:
+    - number
+    - superlative
+    - name
+    - other
+    keywords:
+    - specimen
+    - specimens
+    - smithsonian
+    - natural history museum
+    - american museum of natural history
+    - amnh
+    - museum of comparative zoology
+    - mcz
+    - african expedition
+    - safari
+    - game list
+    - collected
+    - mounted
+    - taxidermy
+    - exhibit
+    - river of doubt expedition
+    - catalog number
+- name: sp-quote-verifier
+  group: scholarship
+  status: active
+  title: Quotations
+  blurb: Is the quote real, word for word, and from the speech, letter or book it's credited to?
+  routes:
+    types:
+    - quote
+    keywords:
+    - said
+    - wrote
+    - quote
+    - speech
+    - address
+    - letter
+    - remarked
+    - declared
+    - '"'
+- name: sp-biographies
+  group: scholarship
+  status: active
+  title: The biographies
+  blurb: What the major T.R. biographies cover, what they rely on, and how to cite them.
+  routes:
+    types:
+    - anecdote
+    - quote
+    - life_event
+    - other
+    keywords:
+    - biographer
+    - biography
+    - according to
+    - morris
+    - mccullough
+    - pringle
+    - thayer
+    - riis
+    - bishop
+    - harbaugh
+    - brands
+    - dalton
+    - millard
+    - nathan miller
+    - goodwin
+    - putnam
+    - mornings on horseback
+    - theodore rex
+    - edition
+    - page
+- name: sp-badlands-scholarship
+  group: scholarship
+  status: active
+  title: Badlands scholarship
+  blurb: 'Hagedorn and those who followed: what Badlands accounts rest on, and how reliable they are.'
+  routes:
+    types:
+    - anecdote
+    - date
+    - place
+    - life_event
+    - other
+    keywords:
+    - hagedorn
+    - roosevelt in the bad lands
+    - di silvestro
+    - jenkinson
+    - lincoln lang
+    - ranching with roosevelt
+    - mattison
+    - north dakota history
+    - historic resource study
+    - state historical society
+    - romance of my life
+    - vivian
+    - recalled
+    - reminiscence
+    - old-timer
+- name: sp-historiography
+  group: scholarship
+  status: active
+  title: How views have changed
+  blurb: T.R.'s reputation from 1919 to now, and claims like "historians agree."
+  routes:
+    types:
+    - superlative
+    - other
+    keywords:
+    - historians agree
+    - historians
+    - scholars
+    - has long been seen
+    - widely seen
+    - consensus
+    - reputation
+    - legacy
+    - reassessment
+    - rankings
+    - ranked
+    - survey of historians
+    - pringle
+    - morison
+    - revisionist
+    - once dismissed
+    - long overlooked
+    - interpretation
+- name: sp-myths
+  group: scholarship
+  status: active
+  title: Myths and misattributions
+  blurb: Famous stories and quotes that aren't quite true, or aren't true at all.
+  routes:
+    types:
+    - anecdote
+    - quote
+    - superlative
+    - other
+    keywords:
+    - legend
+    - myth
+    - apocryphal
+    - supposedly
+    - famously
+    - teddy bear
+    - holt collier
+    - san juan hill
+    - round robin
+    - coined
+    - first president to
+    - last words
+    - often quoted
+    - story goes
+    - misattributed
+    - legend has it
+- name: sp-book-citations
+  group: scholarship
+  status: active
+  title: Book citations
+  blurb: Titles, authors, publishers, years and ISBNs on reading lists. Does the book even exist?
+  routes:
+    types:
+    - name
+    - number
+    - date
+    - other
+    keywords:
+    - isbn
+    - recommended reading
+    - further reading
+    - reading list
+    - bibliography
+    - published by
+    - publisher
+    - edition
+    - reprint
+    - subtitle
+    - press
+    - author of
+- name: sp-scholarly-perspectives
+  group: scholarship
+  status: active
+  title: What historians wrote
+  blurb: How the major biographers actually treat a subject, with page citations, and where they disagree. Never
+    speaks for them.
+  routes:
+    types:
+    - other
+    - anecdote
+    - quote
+    keywords:
+    - historians agree
+    - historians
+    - scholars
+    - biographer
+    - biographers
+    - morris
+    - mccullough
+    - pringle
+    - dalton
+    - brands
+    - millard
+    - harbaugh
+    - cooper
+    - consensus
+    - has long been seen
+    - widely regarded
+    - interpretation
+    - debate
+- name: sp-gilded-age-new-york
+  group: era
+  status: active
+  title: Gilded Age New York
+  blurb: 'The Roosevelts'' New York: addresses, society, Tammany, philanthropy.'
+  routes:
+    types:
+    - place
+    - name
+    - date
+    - office
+    - other
+    keywords:
+    - new york city
+    - manhattan
+    - gilded age
+    - tammany
+    - east 20th street
+    - fifth avenue
+    - children's aid society
+    - newsboys
+    - theodore sr
+    - philanthropy
+    - society
+    - metropolitan museum
+    - american museum of natural history
+    - address
+    - mansion
+    - civil war substitute
+    - lexow
+    - union league
+- name: sp-open-range-west
+  group: era
+  status: active
+  title: The open-range West
+  blurb: Ranching economics, the hard winter of 1886-87, stock associations, railroads, territorial law.
+  routes:
+    types:
+    - number
+    - date
+    - place
+    - other
+    keywords:
+    - open range
+    - cattle
+    - cattlemen
+    - herd
+    - roundup
+    - brand
+    - stock growers
+    - stockmen's association
+    - winter of 1886
+    - hard winter
+    - blizzard
+    - northern pacific
+    - railroad
+    - vigilante
+    - stranglers
+    - territory
+    - statehood
+    - frontier town
+    - beef bonanza
+- name: sp-northern-plains-indigenous
+  group: era
+  status: active
+  title: Northern Plains Indigenous history
+  blurb: Flags and routes every claim to the Library's human reviewers. Never closes these claims itself.
+  routes:
+    types:
+    - name
+    - place
+    - date
+    - anecdote
+    - quote
+    - other
+    keywords:
+    - indian
+    - indians
+    - native
+    - indigenous
+    - tribe
+    - tribal
+    - nation
+    - reservation
+    - treaty
+    - agency
+    - mandan
+    - hidatsa
+    - arikara
+    - mha nation
+    - three affiliated tribes
+    - lakota
+    - sioux
+    - dakota people
+    - assiniboine
+    - crow
+- name: sp-progressive-politics
+  group: era
+  status: active
+  title: Progressive Era politics
+  blurb: Party factions, the 1908 and 1912 conventions, the Bull Moose Party, vote counts.
+  routes:
+    types:
+    - number
+    - date
+    - office
+    - sequence
+    - name
+    - other
+    keywords:
+    - republican
+    - progressive party
+    - bull moose
+    - convention
+    - primary
+    - primaries
+    - delegates
+    - nomination
+    - nominated
+    - electoral vote
+    - popular vote
+    - landslide
+    - taft
+    - wilson
+    - old guard
+    - insurgent
+    - third term
+    - '1912'
+    - platform
+    - carried
+- name: sp-material-culture
+  group: era
+  status: active
+  title: Everyday life and technology
+  blurb: What things cost then and now, telephones, cars, planes, guns, clothing of the era.
+  routes:
+    types:
+    - number
+    - date
+    - other
+    keywords:
+    - price
+    - cost
+    - dollars
+    - today's dollars
+    - inflation
+    - worth
+    - salary
+    - telephone
+    - telegraph
+    - automobile
+    - car
+    - airplane
+    - submarine
+    - phonograph
+    - typewriter
+    - rifle
+    - revolver
+    - clothing
+    - technology
+- name: sp-photo-id
+  group: media
+  status: active
+  title: Photographs and captions
+  blurb: Who is in the picture, when and where it was taken, and whether the caption matches the catalog record.
+  routes:
+    types:
+    - image_id
+    keywords:
+    - photo
+    - photograph
+    - portrait
+    - pictured
+    - caption
+    - alt text
+    - image
+    - painting
+    - engraving
+    - print
+    - credit
+- name: sp-film-sound-cartoons
+  group: media
+  status: active
+  title: Film, sound and cartoons
+  blurb: 'Newsreels, recordings of his voice, political cartoons: dating them and telling staged from real.'
+  routes:
+    types:
+    - image_id
+    - date
+    - name
+    - other
+    keywords:
+    - film
+    - footage
+    - newsreel
+    - motion picture
+    - reenactment
+    - staged
+    - recording
+    - recorded
+    - cylinder
+    - phonograph record
+    - cartoon
+    - cartoonist
+    - berryman
+    - puck
+    - judge
+    - caricature
+- name: sp-maps-places
+  group: media
+  status: active
+  title: Maps and place names
+  blurb: Territories and boundaries, renamed places, distances, and the right words for the landscape.
+  routes:
+    types:
+    - place
+    - number
+    - name
+    keywords:
+    - territory
+    - dakota territory
+    - montana territory
+    - north dakota
+    - statehood
+    - county
+    - boundary
+    - border
+    - renamed
+    - formerly
+    - map
+    - miles
+    - butte
+    - river
+    - creek
+    - gnis
+- name: sp-objects
+  group: media
+  status: active
+  title: Objects and artifacts
+  blurb: Provenance, originals vs replicas, and what a catalog record says about an object.
+  routes:
+    types:
+    - other
+    - name
+    - date
+    keywords:
+    - artifact
+    - object
+    - provenance
+    - on loan
+    - loaned
+    - replica
+    - reproduction
+    - original
+    - collection
+    - saddle
+    - chaps
+    - rifle
+    - sword
+    - desk
+    - chair
+    - furniture
+    - medal
+    - belonged to
+    - owned by
+    - accession
+- name: sp-roosevelt-sites
+  group: media
+  status: active
+  title: Roosevelt sites
+  blurb: 'The places themselves: original, rebuilt, or moved? Sagamore Hill, the Birthplace, Elkhorn, the Maltese
+    Cross cabin.'
+  routes:
+    types:
+    - place
+    - date
+    - other
+    keywords:
+    - birthplace
+    - sagamore hill
+    - maltese cross cabin
+    - elkhorn ranch
+    - inaugural site
+    - wilcox house
+    - wilcox mansion
+    - theodore roosevelt island
+    - pine knot
+    - reconstructed
+    - rebuilt
+    - moved
+    - restored
+    - national historic site
+    - cabin
+    - townhouse
+- name: sp-honors-namesakes
+  group: media
+  status: active
+  title: Honors and namesakes
+  blurb: The Rio Roosevelt, the teddy bear, ships, schools, awards and stamps named for him, and when.
+  routes:
+    types:
+    - date
+    - name
+    - superlative
+    - other
+    keywords:
+    - named for
+    - named after
+    - namesake
+    - renamed
+    - rio roosevelt
+    - roosevelt river
+    - uss theodore roosevelt
+    - teddy bear
+    - award
+    - stamp
+    - coin
+    - nobel
+    - nobel peace prize
+    - medal of honor
+    - posthumous
+    - mount rushmore
+    - honorary
+- name: sp-legacy-commemoration
+  group: media
+  status: active
+  title: Legacy and commemoration
+  blurb: Memorials, monuments, anniversaries, Mount Rushmore, and how T.R. has been remembered.
+  routes:
+    types:
+    - date
+    - number
+    - other
+    keywords:
+    - memorial
+    - monument
+    - statue
+    - removed
+    - relocated
+    - dedicated
+    - roosevelt memorial association
+    - theodore roosevelt association
+    - centennial
+    - anniversary
+    - years since
+    - commemorate
+    - commemoration
+    - memorial park
+    - renamed national park
+    - legacy
+- name: sp-press-publicity
+  group: media
+  status: active
+  title: Press and publicity
+  blurb: The bully pulpit, reporters, muckrakers, staged photographs, and wire reports vs eyewitnesses.
+  routes:
+    types:
+    - anecdote
+    - quote
+    - date
+    - other
+    keywords:
+    - press
+    - reporter
+    - reporters
+    - journalist
+    - newspaper
+    - bully pulpit
+    - muckraker
+    - muck-rake
+    - muckraking
+    - press room
+    - publicity
+    - staged
+    - posed
+    - editor
+    - outlook
+    - metropolitan
+    - wire report
+    - dispatch

@@ -23,6 +23,8 @@ jobs:
           # Private terms (internal hostnames and the like), one per line.
           HP_DENYLIST_TERMS: ${{ secrets.HP_DENYLIST_TERMS }}
         run: python scripts/lint_skills.py
+      - name: ROSTER.md matches roster.yaml
+        run: python scripts/build_roster_md.py --check
       - name: Provenance of trap references
         run: python scripts/check_provenance.py
       - name: Unit tests
