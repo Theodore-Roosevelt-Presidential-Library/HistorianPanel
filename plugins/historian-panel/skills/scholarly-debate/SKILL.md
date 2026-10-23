@@ -27,6 +27,12 @@ Read `reference/panel-rules.md` at the plugin root first, and the
   history questions are framed for the Library's human reviewers, not settled
   by debate.
 
+**Choosing works.** If the config sets `author_index_path`, read that index
+first. It lists every book in the corpus with author, year, era and genre,
+and the specialists whose subjects each book covers most. Use it to pick works
+by subject and by era. Its scores measure coverage, not quality or
+reliability, and anything marked do-not-cite is excluded.
+
 ## Procedure
 
 1. **Frame the question** as one neutral sentence. Check it with the person

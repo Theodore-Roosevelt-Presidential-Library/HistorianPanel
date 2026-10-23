@@ -3,8 +3,10 @@ name: Regression set
 # Scores the panel against claims with known answers. Pull requests get a
 # stratified sample; the weekly run scores everything and records the result.
 #
-# Needs two repository secrets. Without them this workflow skips itself.
+# Needs ANTHROPIC_API_KEY plus one source of private cases. Without them this
+# workflow skips itself.
 #   ANTHROPIC_API_KEY  key for headless Claude Code
+#   HP_CASES_B64       the cases as gzipped, base64-encoded JSON (fits a secret), or
 #   HP_PRIVATE_TOKEN   read-only token for the private ledger repository,
 #                      which holds regression/cases.yaml
 # Logs show aggregate scores only, never case text: this repository is public.
@@ -33,7 +35,8 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 120
     env:
-      HAS_SECRETS: ${{ secrets.ANTHROPIC_API_KEY != '' && secrets.HP_PRIVATE_TOKEN != '' }}
+      HAS_SECRETS: ${{ secrets.ANTHROPIC_API_KEY != '' && (secrets.HP_CASES_B64 != '' || secrets.HP_PRIVATE_TOKEN != '') }}
+      HAS_REPO_CASES: ${{ secrets.HP_PRIVATE_TOKEN != '' }}
     steps:
       - name: Skip without secrets
         if: env.HAS_SECRETS != 'true'
@@ -41,7 +44,7 @@ jobs:
       - uses: actions/checkout@v4
         if: env.HAS_SECRETS == 'true'
       - uses: actions/checkout@v4
-        if: env.HAS_SECRETS == 'true'
+        if: env.HAS_SECRETS == 'true' && env.HAS_REPO_CASES == 'true'
         with:
           repository: Theodore-Roosevelt-Presidential-Library/AccuracyAudit
           token: ${{ secrets.HP_PRIVATE_TOKEN }}
@@ -55,6 +58,17 @@ jobs:
         if: env.HAS_SECRETS == 'true'
         with:
           node-version: "20"
+      - name: Locate private cases
+        if: env.HAS_SECRETS == 'true'
+        env:
+          HP_CASES_B64: ${{ secrets.HP_CASES_B64 }}
+        run: |
+          if [ -n "$HP_CASES_B64" ]; then
+            echo "$HP_CASES_B64" | base64 -d | gunzip > "$RUNNER_TEMP/cases.json"
+            echo "HP_CASES=$RUNNER_TEMP/cases.json" >> "$GITHUB_ENV"
+          else
+            echo "HP_CASES=private/regression/cases.yaml" >> "$GITHUB_ENV"
+          fi
       - name: Install
         if: env.HAS_SECRETS == 'true'
         run: |
@@ -64,13 +78,11 @@ jobs:
         if: env.HAS_SECRETS == 'true' && github.event_name == 'pull_request'
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-          HP_CASES: private/regression/cases.yaml
         run: python scripts/run_regression.py --sample 60 --budget-usd 5 | tee scores.txt
       - name: Score (full set, recorded)
         if: env.HAS_SECRETS == 'true' && github.event_name != 'pull_request'
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-          HP_CASES: private/regression/cases.yaml
         run: python scripts/run_regression.py --record --budget-usd 5 | tee scores.txt
       - name: Post scores on the pull request
         if: always() && env.HAS_SECRETS == 'true' && github.event_name == 'pull_request'

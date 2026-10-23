@@ -15,8 +15,8 @@ Read `reference/panel-rules.md` at the plugin root first.
   Interstate Commerce Commission.
 - Labor: the anthracite coal strike, the commission, and labor policy.
 - Meat inspection and pure food and drug legislation.
-- Civil service policy as President (his earlier Commission years are scope for
-  the period specialist when one exists; until then, here).
+- Civil service policy as President (his earlier Commission years go to
+  `sp-civil-service-police`).
 - Executive orders and proclamations that are not conservation designations:
   counts, numbering, dates signed, subject.
 - Annual messages and special messages to Congress on domestic subjects.

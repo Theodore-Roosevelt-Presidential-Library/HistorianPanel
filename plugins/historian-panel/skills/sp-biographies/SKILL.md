@@ -75,6 +75,12 @@ Biographies in scope include, as places to look (all secondary):
    openlibrary.org): to confirm which edition, and whether pagination changed
    between hardcover, paperback and e-book.
 
+**Choosing works.** If the config sets `author_index_path`, read that index
+first. It lists every book in the corpus with author, year, era and genre,
+and the specialists whose subjects each book covers most. Use it to pick works
+by subject and by era. Its scores measure coverage, not quality or
+reliability, and anything marked do-not-cite is excluded.
+
 ## Known traps
 
 - A vivid scene or line repeated across popular copy comes from a biography,
