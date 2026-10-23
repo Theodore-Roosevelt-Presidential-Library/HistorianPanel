@@ -1,6 +1,6 @@
 ---
 name: panel-setup
-description: "Install, update, check or repair HistorianPanel. Use when someone asks to set up, install, update, refresh or troubleshoot the historian panel or its specialists, asks whether it is up to date, or when panel skills seem missing or stale. Also use to maintain the panel itself: adding or improving specialists and agents (hands off to propose-skill)."
+description: "Install, update, configure, check or repair HistorianPanel. Configures itself with no questions for the person. Use when someone asks to set up, install, update, refresh or troubleshoot the historian panel or its specialists, asks whether it is up to date, or when panel skills seem missing or stale. Also use to maintain the panel itself: adding or improving specialists and agents (hands off to propose-skill)."
 ---
 
 # Panel setup, updates and health check
@@ -75,23 +75,29 @@ If they do not see **Add marketplace**, their organization may manage plugins.
 Suggest they ask IT to sync the repository for everyone (see `docs/admin-setup.md`
 in the repository).
 
-## 4. Health check
+## 4. Configure and check, automatically
 
-Run these and report one line each:
+Do this without asking questions. Follow `references/auto-config.md` in this
+skill's folder: find or create the config, detect each resource the person
+has, fall back quietly to public sources for the rest, and ask in plain words
+only when a specific task needs something. Many people won't have the book
+corpus, self-hosted servers, the Library's working folder or a claude.ai
+project, and the panel works fine for them.
 
-1. **Skills present.** Confirm you can see `historian-panel:accuracy-review` and
-   the active `sp-*` specialists listed in `roster.yaml`.
-2. **Version.** Note the installed version or commit, and compare it with the
-   latest commit on the repository's `main` branch. If they differ, offer the
-   update steps for this environment.
-3. **Config.** Look for `$HP_CONFIG` or `./historian-panel.config.yaml`. If
-   neither exists, offer to create one from `config.example.yaml` in the
-   person's working folder, asking where run output should go.
-4. **Corpora.** If the config names corpus tools, confirm they respond to a
-   simple search. If not, say which ones are unreachable. The panel still works
-   from public sources.
-5. **Smoke test.** Run `accuracy-review` in `ask` mode on "Theodore Roosevelt was
-   born in New York City." Confirm the result comes back with two sources.
+Then check, silently:
+
+1. **Skills present.** You can see `historian-panel:accuracy-review` and the
+   active `sp-*` specialists in `roster.yaml`.
+2. **Version.** The installed version or commit matches the latest on `main`.
+   If not, give the update steps for this environment (section 2 or 3).
+3. **Smoke test.** Run `accuracy-review` in `ask` mode on "Theodore Roosevelt
+   was born in New York City." Two sources should come back.
+
+**Report in one or two plain sentences**, for example: "HistorianPanel is set
+up and working. Results will be saved in your historian-panel-ledger folder."
+Mention a problem only if something is actually broken, and then say what you
+will do about it or the one thing the person needs to do. Give the full detail
+only if they ask.
 
 ## 5. Maintaining the panel itself
 
