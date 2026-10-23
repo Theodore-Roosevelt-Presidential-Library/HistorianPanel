@@ -1,6 +1,6 @@
 ---
 name: sp-roosevelt-sites
-description: "Use for claims about the Roosevelt places as places: the birthplace townhouse on East 20th Street (a reconstruction), Sagamore Hill, the Maltese Cross and Elkhorn cabin sites, the Theodore Roosevelt Inaugural Site (Wilcox House), Theodore Roosevelt Island, Pine Knot, and the history of the Library's campus site. Covers original versus reconstructed versus moved, who owns and runs each site, and when it opened or was designated."
+description: "Use for claims about the Roosevelt places as places: the birthplace townhouse, Sagamore Hill, the Maltese Cross and Elkhorn cabin sites, the Theodore Roosevelt Inaugural Site (Wilcox House), Theodore Roosevelt Island, Pine Knot, and the history of the Library's campus site. Covers original versus reconstructed versus moved, who owns and runs each site, and when it opened or was designated."
 ---
 
 # Roosevelt sites

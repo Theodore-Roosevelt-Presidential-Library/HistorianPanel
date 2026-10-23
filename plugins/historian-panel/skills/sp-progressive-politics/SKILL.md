@@ -11,9 +11,8 @@ Read `reference/panel-rules.md` at the plugin root first.
 
 - Republican Party factions and leaders, 1900-1916, and where T.R. stood among
   them.
-- Nominations and conventions: 1904, 1908 (Taft as heir), 1912 (Chicago
-  Republican convention, the credentials fights, the Progressive convention),
-  1916 (Progressive and Republican conventions meeting at the same time).
+- Nominations and conventions: 1904, 1908, 1912 (the Republican convention,
+  credentials fights, the Progressive convention) and 1916.
 - Presidential preference primaries in 1912: which states held them, who won
   them, and what they did and did not decide.
 - The Progressive (Bull Moose) Party: founding, platform planks, candidates,
@@ -55,7 +54,7 @@ Read `reference/panel-rules.md` at the plugin root first.
    national conventions, published after each) read in scans on HathiTrust or the
    Internet Archive: delegate counts, roll calls, credentials decisions.
 5. **Period newspapers** in original pages through Chronicling America
-   (https://www.loc.gov/collections/chronicling-america/): day-by-day convention
+   (https://www.loc.gov/collections/chronicling-america/about-this-collection/): day-by-day convention
    and primary reporting. Partisan papers slant counts; compare two.
 6. **T.R.'s letters** (Library of Congress Theodore Roosevelt Papers,
    https://www.loc.gov/collections/theodore-roosevelt-papers/; Theodore
@@ -81,14 +80,14 @@ Read `reference/panel-rules.md` at the plugin root first.
 - Popular-vote figures vary between compilations, and percentages are computed
   on different bases (with or without minor parties). Give the source and
   compute the percentage yourself. [method]
-- Primaries in 1912 are described as deciding the nomination. Most delegates
-  were still chosen by conventions and caucuses; count the primary states and
-  the delegates they controlled from the record. [method]
+- Primaries in 1912 are described as deciding the nomination without checking
+  how many delegates were chosen by primary and how many by conventions and
+  caucuses. Count both from the record. [method]
 - Delegate totals at the 1912 Republican convention are quoted from one
   faction's claims. Use the official proceedings and say whose count it is.
   [method]
-- The Progressive Party's later history (1914 losses, 1916 endorsement of
-  Hughes) is collapsed into its founding year. Date each event. [method]
+- The Progressive Party's later history is collapsed into its founding year.
+  Date each event separately from the record. [method]
 - "Bull Moose" is used as if it were the official name of the party. Use the
   official name for formal claims and note the nickname. [method]
 - Election Day, the electoral vote count in Congress and inauguration are

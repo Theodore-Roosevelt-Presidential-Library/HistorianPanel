@@ -1,6 +1,6 @@
 ---
 name: sp-maps-places
-description: "Use for claims about place names, locations, boundaries and distances in T.R.'s world: what a place was called then and now, which territory or state it was in on a given date (Dakota Territory before November 1889, North Dakota after; Montana Territory and state), renamed towns, river and butte names, map dates and makers, and miles between places. Also for map images used in Library copy."
+description: "Use for claims about place names, locations, boundaries and distances in T.R.'s world: what a place was called then and now, which territory or state it was in on a given date (Dakota Territory versus North Dakota, Montana Territory versus Montana), renamed towns, river and butte names, map dates and makers, and miles between places. Also for map images used in Library copy."
 ---
 
 # Maps and place names

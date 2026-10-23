@@ -69,7 +69,7 @@ Read `reference/panel-rules.md` at the plugin root first.
   Find the naming authority's own record. [method]
 - Posthumous honors are written as if received in life, or the award date is
   confused with the date of the deed. Give both. [method]
-- "Named for" is assumed from a name alone. Many places named Roosevelt honor
+- "Named for" is assumed from a name alone. A place named Roosevelt may honor
   someone else or the family generally; find the naming record. [method]
 - The teddy bear story is told with details that grew in retelling. Trace each
   detail to a period account and say which are later. [method]

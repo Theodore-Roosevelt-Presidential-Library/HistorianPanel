@@ -1,6 +1,6 @@
 ---
 name: sp-legacy-commemoration
-description: "Use for claims about how T.R. has been remembered since his death in January 1919: memorials and monuments (including removed or relocated ones), the Roosevelt Memorial Association, the Woman's Roosevelt Memorial Association and the Theodore Roosevelt Association, centennials and anniversaries, memorial legislation, the renaming of a national memorial park as a national park, and how anniversaries and 'years since' are counted."
+description: "Use for claims about how T.R. has been remembered since his death: memorials and monuments (including removed or relocated ones), the Roosevelt Memorial Association, the Woman's Roosevelt Memorial Association and the Theodore Roosevelt Association, centennials and anniversaries, memorial legislation, the renaming of a national memorial park as a national park, and how anniversaries and 'years since' are counted."
 ---
 
 # Legacy and commemoration
@@ -38,8 +38,8 @@ Read `reference/panel-rules.md` at the plugin root first.
    charters and newspapers.
 2. **Theodore Roosevelt Collection, Harvard Library**
    (https://library.harvard.edu/collections/theodore-roosevelt-collection):
-   founded with the memorial association's collection; finding aids document
-   memorial activity.
+   its overview and finding aids document its own origins and memorial-era
+   collecting.
 3. **National Park Service administrative histories** (NPS History,
    https://npshistory.com/administrative_histories.htm) and park pages
    (for example https://www.nps.gov/thro/index.htm): designation and renaming
@@ -51,7 +51,8 @@ Read `reference/panel-rules.md` at the plugin root first.
    (https://www.amnh.org/exhibitions/permanent/theodore-roosevelt-memorial):
    construction, dedication and any later changes, from the holder.
 6. **Period newspapers** read in the original (Chronicling America,
-   https://www.loc.gov/collections/chronicling-america/, for earlier decades;
+   https://www.loc.gov/collections/chronicling-america/about-this-collection/,
+   for earlier decades;
    later papers through a library database): dedications and ceremonies.
 7. **City, state and agency records** for monuments: commission minutes,
    permits, and removal or relocation decisions, read in the official record.

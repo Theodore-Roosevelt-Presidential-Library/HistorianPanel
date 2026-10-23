@@ -1,6 +1,6 @@
 ---
 name: sp-film-sound-cartoons
-description: "Use for claims about motion pictures, sound recordings and political cartoons of or about T.R.: newsreel and actuality footage, what a film shows and when it was shot, staged scenes and reenactments (such as San Juan Heights films), his recorded speeches on cylinder and disc, and cartoons by Berryman, in Puck and Judge, or other papers, including the teddy bear cartoon. Covers dating, identifying and crediting these items."
+description: "Use for claims about motion pictures, sound recordings and political cartoons of or about T.R.: newsreel and actuality footage, what a film shows and when it was shot, staged scenes and reenactments (such as Spanish-American War films), his recorded speeches on cylinder and disc, and cartoons by Berryman, in Puck and Judge, or other papers, including the teddy bear cartoon. Covers dating, identifying and crediting these items."
 ---
 
 # Film, sound recordings and political cartoons
@@ -31,7 +31,7 @@ Read `reference/panel-rules.md` at the plugin root first.
 ## Where to look first
 
 1. **Library of Congress, Theodore Roosevelt: His Life and Times on Film**
-   (https://www.loc.gov/collections/theodore-roosevelt-films/): catalog records
+   (https://www.loc.gov/collections/theodore-roosevelt-films/about-this-collection): catalog records
    with dates, producers and notes on staged or reenacted footage. Read the
    record, not just the clip title.
 2. **Library of Congress Moving Image Research Center**
@@ -40,7 +40,7 @@ Read `reference/panel-rules.md` at the plugin root first.
    deposits and newsreel records.
 3. **Library of Congress Recorded Sound Research Center**
    (https://www.loc.gov/rr/record/) and the **National Jukebox**
-   (https://www.loc.gov/jukebox/): playable recordings with label data.
+   (https://www.loc.gov/jukebox/about): playable recordings with label data.
 4. **Discography of American Historical Recordings** (https://adp.library.ucsb.edu/)
    and the **UCSB Cylinder Audio Archive** (https://cylinders.library.ucsb.edu/):
    matrix and take numbers, recording dates, release history.
@@ -48,7 +48,7 @@ Read `reference/panel-rules.md` at the plugin root first.
    collection** (https://www.archives.gov/legislative/research/special-collections/berryman):
    Berryman originals with dates.
 6. **Library of Congress Prints and Photographs Online Catalog**
-   (https://www.loc.gov/pictures/): *Puck* and *Judge* prints and other cartoons,
+   (https://www.loc.gov/pictures/about): *Puck* and *Judge* prints and other cartoons,
    with issue dates.
 7. **Billy Ireland Cartoon Library and Museum, Ohio State**
    (https://cartoons.osu.edu/): cartoon originals and clippings.

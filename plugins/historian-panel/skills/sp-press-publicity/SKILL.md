@@ -1,6 +1,6 @@
 ---
 name: sp-press-publicity
-description: "Use for claims about T.R. and the press: his relations with reporters, the White House press room, the 'bully pulpit', his 1906 muckrake speech and the word muckraker, his own newspaper and magazine writing (Outlook, Metropolitan, Kansas City Star), image-making, staged or posed photographs and publicity stunts, and how news of events reached the public (wire reports versus eyewitness accounts)."
+description: "Use for claims about T.R. and the press: his relations with reporters, the White House press room, the 'bully pulpit', his muckrake speech and the word muckraker, his own newspaper and magazine writing, image-making, staged or posed photographs and publicity stunts, and how news of events reached the public (wire reports versus eyewitness accounts)."
 ---
 
 # T.R. and the press
@@ -12,8 +12,8 @@ Read `reference/panel-rules.md` at the plugin root first.
 - T.R.'s relations with reporters and editors: access, favored correspondents,
   briefings, leaks, the press room in the executive offices.
 - The "bully pulpit": where the phrase comes from and how it is used.
-- The 1906 speech on the man with the muck-rake, its occasions (private dinner
-  remarks and the public address) and the history of the word muckraker.
+- The speech on the man with the muck-rake, every occasion on which he used
+  the theme, and the history of the word muckraker.
 - Journalists and muckrakers as figures in his story.
 - His work as a journalist and editor, including his magazine and newspaper
   connections after the presidency.
@@ -23,7 +23,7 @@ Read `reference/panel-rules.md` at the plugin root first.
 
 ## Out of scope
 
-- Exact wording of the 1906 speech or any quote → `sp-quote-verifier`
+- Exact wording of the muck-rake speech or any quote → `sp-quote-verifier`
   (also routed here)
 - "Coined," "first," "invented" a word or practice → `sp-superlatives`
   (this specialist finds the word history; that one rules on the superlative)
@@ -44,7 +44,7 @@ Read `reference/panel-rules.md` at the plugin root first.
    https://www.loc.gov/collections/theodore-roosevelt-papers/; Theodore
    Roosevelt Center, https://www.theodorerooseveltcenter.org/).
 3. **Period newspapers** in the original (Chronicling America,
-   https://www.loc.gov/collections/chronicling-america/): compare wire copy
+   https://www.loc.gov/collections/chronicling-america/about-this-collection/): compare wire copy
    across several papers to tell a shared dispatch from independent reporting.
 4. **Oxford English Dictionary** (https://www.oed.com/, subscription) for first
    recorded uses of words and phrases. Other dictionaries' etymology notes are
@@ -69,8 +69,8 @@ Read `reference/panel-rules.md` at the plugin root first.
   reports. Identify the shared text and count it once. [method]
 - A newspaper's version of a speech is treated as the delivered text, or the
   later book text as what reporters heard. Say which version you used. [method]
-- The private remarks and the later public speech on the same theme are merged
-  into one event. Date and place each. [method]
+- Private remarks and a later public speech on the same theme are merged into
+  one event. Date and place each occasion. [method]
 - Posed or staged photographs are described as candid, or a publicity
   arrangement as spontaneous. Look for the photographer's or agency's record
   and contemporary accounts. [method]

@@ -35,7 +35,7 @@ Read `reference/panel-rules.md` at the plugin root first.
    https://www.loc.gov/collections/theodore-roosevelt-papers/; Theodore
    Roosevelt Center, https://www.theodorerooseveltcenter.org/), contracts, deeds,
    and period newspaper reports read in the original (Chronicling America,
-   https://www.loc.gov/collections/chronicling-america/).
+   https://www.loc.gov/collections/chronicling-america/about-this-collection/).
 2. **MeasuringWorth** (https://www.measuringworth.com/): several different
    measures of relative value (prices, wages, share of GDP). Best for explaining
    that a conversion depends on the measure chosen.
