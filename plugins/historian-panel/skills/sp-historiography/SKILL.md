@@ -31,7 +31,7 @@ Read `reference/panel-rules.md` at the plugin root first.
 - The events themselves → the subject specialist (for example
   `sp-conservation`, `sp-officeholder-sequences`)
 - Race, Indigenous policy and other hard chapters as history → flag for the
-  Library's human reviewers; `sp-hard-chapters` when it exists
+  Library's human reviewers via `sp-hard-chapters`
 - Claims about living historians' current views → flag for the Library's
   human reviewers (panel rules section 10)
 
