@@ -164,6 +164,8 @@ def lint(plugin: Path) -> Report:
             report.error(roster_path, f"{name}: active but skills/{name}/ is missing")
         if status == "planned" and name in skill_dirs:
             report.error(roster_path, f"{name}: has a skill folder but is still marked planned")
+        if not entry.get("blurb"):
+            report.error(roster_path, f"{name}: needs a plain-language blurb for ROSTER.md")
         if status == "active" and name.startswith("sp-") and not entry.get("routes"):
             report.error(roster_path, f"{name}: active specialist needs routes")
 
